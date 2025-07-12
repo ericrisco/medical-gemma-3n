@@ -1,0 +1,14 @@
+# Ignore credentials content, but keep the folder
+/credentials/*
+!/credentials/
+
+# Ignore all downloaded data in /data except scripts and docs
+/data/*/
+!/data/*.py
+!/data/requirements.txt
+!/data/README.md
+
+/plan
+PRD.md
+
+.DS_Store

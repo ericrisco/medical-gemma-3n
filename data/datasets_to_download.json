@@ -1,0 +1,98 @@
+[
+  {
+    "type": "huggingface",
+    "name": "FreedomIntelligence/medical-o1-reasoning-SFT",
+    "folder": "medical_o1_reasoning_sft",
+    "config": "en"
+  },
+  {
+    "type": "huggingface",
+    "name": "gamino/wiki_medical_terms",
+    "folder": "wiki_medical_terms"
+  },
+  {
+    "type": "huggingface",
+    "name": "FreedomIntelligence/medical-o1-verifiable-problem",
+    "folder": "medical_o1_verifiable_problem"
+  },
+  {
+    "type": "huggingface",
+    "name": "Intelligent-Internet/II-Medical-Reasoning-SFT",
+    "folder": "ii_medical_reasoning_sft"
+  },
+  {
+    "type": "huggingface",
+    "name": "amu-cai/CAMEO",
+    "folder": "cameo"
+  },
+  {
+    "type": "huggingface",
+    "name": "badri55/First_aid__dataset",
+    "folder": "first_aid_dataset"
+  },
+  {
+    "type": "huggingface",
+    "name": "gretelai/symptom_to_diagnosis",
+    "folder": "symptom_to_diagnosis"
+  },
+  {
+    "type": "huggingface",
+    "name": "QuyenAnhDE/Diseases_Symptoms",
+    "folder": "diseases_symptoms"
+  },
+  {
+    "type": "huggingface",
+    "name": "forwins/Drug-Review-Dataset",
+    "folder": "drug_review_dataset"
+  },
+  {
+    "type": "huggingface",
+    "name": "truehealth/medicationqa",
+    "folder": "medicationqa"
+  },
+  {
+    "type": "huggingface",
+    "name": "QCRI/HumAID-all",
+    "folder": "humaid_all",
+    "split": "dev"
+  },
+  {
+    "type": "huggingface",
+    "name": "QCRI/MEDIC",
+    "folder": "medic_images"
+  },
+  {
+    "type": "huggingface",
+    "name": "paulelliotco/synthetic-disaster-reports",
+    "folder": "synthetic_disaster_reports"
+  },
+  {
+    "type": "kaggle",
+    "name": "louisteitelbaum/911-recordings",
+    "folder": "911_recordings"
+  },
+  {
+    "type": "direct",
+    "url": "https://zenodo.org/record/1203745/files/UrbanSound8K.tar.gz",
+    "folder": "urbansound8k",
+    "filename": "UrbanSound8K.tar.gz"
+  },
+  {
+    "type": "direct",
+    "url": "https://www.who.int/publications/i/item/9789241513081",
+    "folder": "basic_emergency_care",
+    "filename": "9789241513081-eng.pdf"
+  },
+  {
+    "type": "direct",
+    "url": "https://www.icrc.org/en/publication/basic-emergency-care-approach-acutely-ill-and-injured",
+    "folder": "ifrc_first_aid_guidelines",
+    "filename": "ifrc_first_aid_guidelines.pdf"
+  },
+  {
+    "type": "direct",
+    "url": "https://www.who.int/teams/integrated-health-services/clinical-services-and-systems/emergency-and-critical-care/bec",
+    "folder": "bec_protocol",
+    "filename": "bec_protocol.pdf"
+  }
+] 
