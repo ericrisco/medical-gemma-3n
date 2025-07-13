@@ -12,3 +12,9 @@
 PRD.md
 
 .DS_Store
+
+*/__pycache__
+
+.env
+
+/data-prep/json/*
