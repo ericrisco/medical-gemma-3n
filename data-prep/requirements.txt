@@ -1,0 +1,10 @@
+pandas
+pyarrow 
+datasets
+ollama
+PyPDF2
+cohere
+faiss-cpu
+tqdm
+dotenv
+langchain
