@@ -42,24 +42,13 @@
   },
   {
     "type": "huggingface",
-    "name": "forwins/Drug-Review-Dataset",
-    "folder": "drug_review_dataset"
-  },
-  {
-    "type": "huggingface",
     "name": "truehealth/medicationqa",
     "folder": "medicationqa"
   },
   {
     "type": "huggingface",
-    "name": "QCRI/HumAID-all",
-    "folder": "humaid_all",
-    "split": "dev"
-  },
-  {
-    "type": "huggingface",
-    "name": "QCRI/MEDIC",
-    "folder": "medic_images"
+    "name": "truehealth/medqa",
+    "folder": "medqa"
   },
   {
     "type": "huggingface",
@@ -67,32 +56,15 @@
     "folder": "synthetic_disaster_reports"
   },
   {
-    "type": "kaggle",
-    "name": "louisteitelbaum/911-recordings",
-    "folder": "911_recordings"
-  },
-  {
     "type": "direct",
-    "url": "https://zenodo.org/record/1203745/files/UrbanSound8K.tar.gz",
-    "folder": "urbansound8k",
-    "filename": "UrbanSound8K.tar.gz"
-  },
-  {
-    "type": "direct",
-    "url": "https://www.who.int/publications/i/item/9789241513081",
+    "url": "https://iris.who.int/bitstream/handle/10665/275635/9789241513081-eng.pdf?sequence=1",
     "folder": "basic_emergency_care",
     "filename": "9789241513081-eng.pdf"
   },
   {
     "type": "direct",
-    "url": "https://www.icrc.org/en/publication/basic-emergency-care-approach-acutely-ill-and-injured",
+    "url": "https://shop.icrc.org/download/ebook?sku=BEC/002-Ebook",
     "folder": "ifrc_first_aid_guidelines",
     "filename": "ifrc_first_aid_guidelines.pdf"
-  },
-  {
-    "type": "direct",
-    "url": "https://www.who.int/teams/integrated-health-services/clinical-services-and-systems/emergency-and-critical-care/bec",
-    "folder": "bec_protocol",
-    "filename": "bec_protocol.pdf"
   }
 ] 
