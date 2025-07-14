@@ -17,4 +17,6 @@ PRD.md
 
 .env
 
-/data-prep/json/*
+/data-prep/json/*.json
+/data-prep/json/final/*.json
+!/data-prep/json/final/*.md
