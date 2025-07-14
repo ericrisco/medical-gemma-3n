@@ -20,145 +20,144 @@ This directory contains scripts to prepare various medical datasets for training
 
 ## Dataset Sources
 
-The scripts expect raw datasets to be downloaded in the `data/` directory with the following structure:
+The scripts automatically download and process the following datasets:
 
-```
-data/
-├── symptom_to_diagnosis/
-├── diseases_symptoms/
-├── first_aid_dataset/
-├── medical_o1_reasoning_sft/
-├── medical_o1_verifiable_problem/
-├── medicationqa/
-├── medqa/
-├── synthetic_disaster_reports/
-├── wiki_medical_terms/
-├── basic_emergency_care/        # PDF files
-└── ifrc_first_aid_guidelines/   # PDF files
-```
+### HuggingFace Datasets (Auto-downloaded):
+- `FreedomIntelligence/medical-o1-reasoning-SFT` (19,704 examples)
+- `FreedomIntelligence/medical-o1-verifiable-problem` (40,316 examples)  
+- `gamino/wiki_medical_terms` (9,528 examples)
+- `truehealth/medqa` (10,177 examples)
+- `truehealth/medicationqa` (690 examples)
+- `gretelai/symptom_to_diagnosis` (849 examples)
+- `QuyenAnhDE/Diseases_Symptoms` (394 examples)
+- `badri55/First_aid__dataset` (26 examples)
+- `paulelliotco/synthetic-disaster-reports` (1,000 examples)
+
+### Direct PDF Downloads:
+- WHO Basic Emergency Care Guidelines
+- IFRC First Aid Guidelines
+
+### Generated Data:
+- Extreme First Aid Q&A using RAG (1,641 examples)
+
+**Total Combined: 84,325 medical Q&A examples**
 
 ## Execution Order
 
 Follow this **exact order** to execute the scripts:
 
-### Phase 1: Basic Dataset Preparation (No Dependencies)
+### Phase 1: Individual Dataset Processing (No Dependencies)
 
-These scripts can be run in parallel as they have no dependencies on each other:
+These scripts download HuggingFace datasets and process them. Can be run in parallel:
 
-1. **Symptom to Diagnosis Dataset**
-   ```bash
-   python prepare_symptom_to_diagnosis.py
-   ```
-   - **Purpose**: Converts symptom-diagnosis pairs using Ollama to generate doctor-like responses
-   - **Input**: `data/symptom_to_diagnosis/*/symptom_to_diagnosis-train.arrow`
-   - **Output**: `json/symptom_to_diagnosis.json`
-   - **Uses**: Ollama model to reformat responses in medical professional language
-
-2. **Diseases and Symptoms Dataset**
-   ```bash
-   python prepare_diseases_symptoms.py
-   ```
-   - **Purpose**: Creates simple symptom-to-treatment mappings
-   - **Input**: `data/diseases_symptoms/*/diseases_symptoms-train.arrow`
-   - **Output**: `json/diseases_symptoms.json`
-   - **Processing**: Direct mapping without AI generation
-
-3. **First Aid Dataset**
-   ```bash
-   python prepare_first_aid_dataset.py
-   ```
-   - **Purpose**: Processes first aid patterns and responses
-   - **Input**: `data/first_aid_dataset/*/first_aid__dataset-train.arrow`
-   - **Output**: `json/first_aid_dataset.json`
-   - **Processing**: Direct conversion of patterns to Q&A format
-
-4. **Medical O1 Reasoning Dataset**
+1. **Medical O1 Reasoning SFT** (19,704 examples)
    ```bash
    python prepare_medical_o1_reasoning_sft.py
    ```
-   - **Purpose**: Combines complex medical reasoning with responses
-   - **Input**: `data/medical_o1_reasoning_sft/*/medical-o1-reasoning-sft-train.arrow`
+   - **Downloads**: `FreedomIntelligence/medical-o1-reasoning-SFT`
    - **Output**: `json/medical_o1_reasoning_sft.json`
-   - **Processing**: Merges reasoning and response into structured format
+   - **Processing**: Clinical reasoning chains for supervised fine-tuning
 
-5. **Medical O1 Verifiable Problems**
+2. **Medical O1 Verifiable Problems** (40,316 examples)
    ```bash
    python prepare_medical_o1_verifiable_problem.py
    ```
-   - **Purpose**: Processes verifiable medical questions and answers
-   - **Input**: `data/medical_o1_verifiable_problem/*/medical-o1-verifiable-problem-train.arrow`
+   - **Downloads**: `FreedomIntelligence/medical-o1-verifiable-problem`
    - **Output**: `json/medical_o1_verifiable_problem.json`
-   - **Processing**: Direct Q&A conversion with duplicate checking
+   - **Processing**: Evidence-based medical problems with verifiable answers
 
-6. **Medication QA Dataset**
-   ```bash
-   python prepare_medicationqa.py
-   ```
-   - **Purpose**: Processes medication-related questions and answers
-   - **Input**: `data/medicationqa/*/medicationqa-train.arrow`
-   - **Output**: `json/medicationqa.json`
-   - **Processing**: Direct Q&A conversion
-
-7. **Medical QA Dataset**
+3. **Medical QA Dataset** (10,177 examples)
    ```bash
    python prepare_medqa.py
    ```
-   - **Purpose**: Processes multiple-choice medical questions with explanations
-   - **Input**: `data/medqa/*/medqa-train.arrow`
+   - **Downloads**: `truehealth/medqa`
    - **Output**: `json/medqa.json`
-   - **Uses**: Ollama to generate explanations for correct answers
+   - **Uses**: Ollama to generate explanations for multiple-choice questions
 
-8. **Synthetic Disaster Reports**
-   ```bash
-   python prepare_synthetic_disaster_reports.py
-   ```
-   - **Purpose**: Creates emergency response scenarios with resource needs
-   - **Input**: `data/synthetic_disaster_reports/*/synthetic-disaster-reports-train.arrow`
-   - **Output**: `json/synthetic_disaster_reports.json`
-   - **Processing**: Formats disaster scenarios with resource requirements
-
-9. **Wiki Medical Terms**
+4. **Wiki Medical Terms** (9,528 examples)
    ```bash
    python prepare_wiki_medical_terms.py
    ```
-   - **Purpose**: Generates medical terminology Q&A from Wikipedia content
-   - **Input**: `data/wiki_medical_terms/*/wiki_medical_terms-train.arrow`
+   - **Downloads**: `gamino/wiki_medical_terms`
    - **Output**: `json/wiki_medical_terms.json`
-   - **Uses**: Ollama to generate questions and answers from medical contexts
+   - **Uses**: Ollama to generate Q&A from medical terminology
 
-### Phase 2: Knowledge Vectorization (Required for Phase 3)
+5. **Synthetic Disaster Reports** (1,000 examples)
+   ```bash
+   python prepare_synthetic_disaster_reports.py
+   ```
+   - **Downloads**: `paulelliotco/synthetic-disaster-reports`
+   - **Output**: `json/synthetic_disaster_reports.json`
+   - **Processing**: Emergency response scenarios and resource planning
 
-10. **Vectorize PDF Knowledge**
+6. **Symptom to Diagnosis** (849 examples)
+   ```bash
+   python prepare_symptom_to_diagnosis.py
+   ```
+   - **Downloads**: `gretelai/symptom_to_diagnosis`
+   - **Output**: `json/symptom_to_diagnosis.json`
+   - **Uses**: Ollama to enhance diagnostic explanations
+
+7. **Medication QA** (690 examples)
+   ```bash
+   python prepare_medicationqa.py
+   ```
+   - **Downloads**: `truehealth/medicationqa`
+   - **Output**: `json/medicationqa.json`
+   - **Processing**: Medication information and drug interactions
+
+8. **Diseases and Symptoms** (394 examples)
+   ```bash
+   python prepare_diseases_symptoms.py
+   ```
+   - **Downloads**: `QuyenAnhDE/Diseases_Symptoms`
+   - **Output**: `json/diseases_symptoms.json`
+   - **Processing**: Disease symptomatology and diagnostic criteria
+
+9. **First Aid Dataset** (26 examples)
+   ```bash
+   python prepare_first_aid_dataset.py
+   ```
+   - **Downloads**: `badri55/First_aid__dataset`
+   - **Output**: `json/first_aid_dataset.json`
+   - **Processing**: Basic first aid procedures
+
+### Phase 2: PDF Knowledge Vectorization (Required for Phase 3)
+
+10. **Vectorize Emergency Care PDFs**
     ```bash
     python vectorizing_knowledge.py
     ```
-    - **Purpose**: Extracts text from PDFs and creates embeddings for RAG
-    - **Input**: PDF files in `data/basic_emergency_care/` and `data/ifrc_first_aid_guidelines/`
+    - **Purpose**: Downloads and processes WHO/IFRC PDFs for RAG-based first aid generation
+    - **Downloads**: 
+      - WHO Basic Emergency Care Guidelines
+      - IFRC First Aid Guidelines  
     - **Output**: `json/pdf_embeddings.json`
     - **Requirements**: Cohere API key for embeddings
     - **Processing**: 
-      - Extracts text from PDFs using PyPDF2
-      - Splits text into chunks using LangChain
-      - Generates embeddings using Cohere's embed-english-v3.0 model
-    - **⚠️ IMPORTANT**: This must complete before running `generate_firstaid_qa_dataset.py`
+      - Downloads PDFs automatically
+      - Extracts text using PyPDF2
+      - Chunks text using LangChain
+      - Creates embeddings with Cohere embed-english-v3.0
+    - **⚠️ CRITICAL**: Must complete before running Phase 3
 
-### Phase 3: RAG-Based Dataset Generation (Depends on Phase 2)
+### Phase 3: RAG-Based Synthetic Data Generation (Depends on Phase 2)
 
-11. **Generate First Aid QA Dataset**
+11. **Generate Extreme First Aid Scenarios** (1,641 examples)
     ```bash
     python generate_firstaid_qa_dataset.py
     ```
-    - **Purpose**: Generates extreme first aid scenarios using RAG with PDF embeddings
-    - **Input**: `json/pdf_embeddings.json` (from vectorizing_knowledge.py)
+    - **Purpose**: Uses RAG to create realistic emergency scenarios from PDF knowledge
+    - **Input**: `json/pdf_embeddings.json` (from Phase 2)
     - **Output**: `json/extreme_firstaid_qa_dataset.json`
     - **Requirements**: 
       - Completed `vectorizing_knowledge.py`
       - Cohere API key for query embeddings
-      - Ollama with gemma3n model
+      - Ollama with Gemma3N model
     - **Processing**:
-      - Uses FAISS index for similarity search
-      - Generates realistic emergency scenarios
-      - Creates context-aware Q&A pairs using RAG
+      - FAISS similarity search on PDF embeddings
+      - Gemma3N generates realistic emergency Q&A
+      - Context-aware responses using WHO/IFRC guidelines
 
 ### Phase 4: Final Merge
 
@@ -168,9 +167,36 @@ These scripts can be run in parallel as they have no dependencies on each other:
     ```
     - **Purpose**: Combines all individual JSON datasets into a single training file
     - **Input**: All JSON files in `json/` directory (except `pdf_embeddings.json`)
-    - **Output**: `json/medical_training_dataset.json`
+    - **Output**: `json/final/medical_training_dataset.json`
     - **Processing**: Adds source tracking to each entry and combines all datasets
+    - **Upload**: Automatically uploads to HuggingFace Hub as `ericrisco/medical-training-dataset`
     - **⚠️ IMPORTANT**: Run this LAST after all other scripts have completed
+
+## Final Dataset Results
+
+After running all scripts, the final consolidated dataset contains:
+
+**📊 Dataset Statistics:**
+- **Total Examples**: 84,325 medical Q&A pairs
+- **Format**: Standardized `{input, context, output, source}` structure
+- **Location**: `json/final/medical_training_dataset.json`
+- **HuggingFace**: `ericrisco/medical-training-dataset`
+
+**📈 Breakdown by Source:**
+| Source | Examples | Description |
+|--------|----------|-------------|
+| medical_o1_verifiable_problem | 40,316 | Evidence-based medical problems with verifiable answers |
+| medical_o1_reasoning_sft | 19,704 | Clinical reasoning and diagnostic processes |
+| medqa | 10,177 | General medical Q&A with multiple choice explanations |
+| wiki_medical_terms | 9,528 | Medical terminology definitions and explanations |
+| extreme_firstaid_qa_dataset | 1,641 | Emergency first aid procedures using RAG |
+| synthetic_disaster_reports | 1,000 | Disaster response scenarios and resource planning |
+| symptom_to_diagnosis | 849 | Symptom analysis and differential diagnosis |
+| medicationqa | 690 | Medication information and drug interactions |
+| diseases_symptoms | 394 | Disease symptomatology and diagnostic criteria |
+| first_aid_dataset | 26 | Basic first aid procedures |
+
+This comprehensive dataset covers emergency medicine, clinical reasoning, pharmacology, diagnostics, and medical terminology - ideal for training medical AI assistants.
 
 ## Script Details
 
@@ -199,26 +225,3 @@ All scripts generate JSON files with the following structure:
   }
 ]
 ```
-
-## Troubleshooting
-
-1. **Ollama Connection Issues**: Ensure Ollama service is running and the model is available
-2. **Cohere API Issues**: Verify your API key is set correctly in the `.env` file
-3. **Missing Data Files**: Ensure all required `.arrow` files are downloaded to the correct paths
-4. **Memory Issues**: For large datasets, the scripts process data incrementally to manage memory
-5. **PDF Processing Issues**: Ensure PDF files are not corrupted and are readable
-
-## Resource Requirements
-
-- **RAM**: 8GB+ recommended for large datasets
-- **Storage**: Several GB for processed datasets
-- **API Credits**: Cohere API usage for embeddings (costs vary by dataset size)
-- **Processing Time**: Can take hours for complete processing depending on dataset sizes
-
-## Output Statistics
-
-After running all scripts, you'll have approximately:
-- Individual datasets in `json/` directory
-- Combined training dataset with thousands of medical Q&A pairs
-- PDF embeddings for RAG-based question answering
-- Comprehensive medical knowledge spanning multiple domains

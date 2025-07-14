@@ -8,3 +8,4 @@ faiss-cpu
 tqdm
 dotenv
 langchain
+huggingface_hub
