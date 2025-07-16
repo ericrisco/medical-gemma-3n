@@ -66,5 +66,77 @@
     "url": "https://shop.icrc.org/download/ebook?sku=BEC/002-Ebook",
     "folder": "ifrc_first_aid_guidelines",
     "filename": "ifrc_first_aid_guidelines.pdf"
+  },
+  {
+    "type": "direct",
+    "url": "https://cdn.who.int/media/docs/default-source/integrated-health-services-(ihs)/csy/surgical-care/emergencysurgicalcareindisastersituations.pdf",
+    "folder": "emergency_surgical_care_in_disaster_situations",
+    "filename": "emergency_surgical_care_in_disaster_situations.pdf"
+  },
+  {
+    "type": "direct",
+    "url": "https://api.army.mil/e2/c/downloads/2023/01/19/31e03488/17-13-tactical-casualty-combat-care-handbook-v5-may-17-distro-a.pdf",
+    "folder": "tactical_casualty_combat_care_handbook",
+    "filename": "17-13-tactical-casualty-combat-care-handbook-v5-may-17-distro-a.pdf"
+  },
+  {
+    "type": "direct",
+    "url": "https://www.ifrc.org/sites/default/files/2022-02/EN_GFARC_GUIDELINES_2020.pdf",
+    "folder": "gfarc_guidelines",
+    "filename": "EN_GFARC_GUIDELINES_2020.pdf"
+  },
+  {
+    "type": "direct",
+    "url": "https://iris.who.int/bitstream/handle/10665/326106/9789241516181-eng.pdf?ua=1",
+    "folder": "emergency_medical_services_guidelines",
+    "filename": "9789241516181-eng.pdf"
+  },
+  {
+    "type": "direct",
+    "url": "https://www.ready.gov/sites/default/files/2019.CERT_.Basic_.PM_FINAL_508c.pdf",
+    "folder": "cert_basic_pm",
+    "filename": "2019.CERT_.Basic_.PM_FINAL_508c.pdf"
+  },
+  {
+    "type": "direct",
+    "url": "https://www2.gov.bc.ca/assets/gov/public-safety-and-emergency-services/emergency-preparedness-response-recovery/embc/preparedbc/preparedbc-guides/earthquake_and_tsunami_guide.pdf",
+    "folder": "earthquake_and_tsunami_guide",
+    "filename": "earthquake_and_tsunami_guide.pdf"
+  },
+  {
+    "type": "direct",
+    "url": "https://www2.gov.bc.ca/assets/gov/public-safety-and-emergency-services/emergency-preparedness-response-recovery/embc/preparedbc/preparedbc-guides/preparedbc_flood_preparedness_guide_fillable.pdf",
+    "folder": "preparedbc_flood_preparedness_guide",
+    "filename": "preparedbc_flood_preparedness_guide.pdf"
+  },
+  {
+    "type": "direct",
+    "url": "https://www2.gov.bc.ca/assets/gov/public-safety-and-emergency-services/emergency-preparedness-response-recovery/embc/preparedbc/preparedbc-guides/preparedbc_extreme_heat_guide.pdf",
+    "folder": "preparedbc_extreme_heat_guide",
+    "filename": "preparedbc_extreme_heat_guide.pdf"
+  },
+  {
+    "type": "direct",
+    "url": "https://www2.gov.bc.ca/assets/gov/public-safety-and-emergency-services/emergency-preparedness-response-recovery/embc/preparedbc/preparedbc-guides/preparedbc_pandemic_guide.pdf",
+    "folder": "preparedbc_pandemic_guide",
+    "filename": "preparedbc_pandemic_guide.pdf"
+  },
+  {
+    "type": "direct",
+    "url": "https://www2.gov.bc.ca/assets/gov/public-safety-and-emergency-services/emergency-preparedness-response-recovery/embc/preparedbc/preparedbc-guides/preparedbc_winter_guide.pdf",
+    "folder": "preparedbc_winter_guide",
+    "filename": "preparedbc_winter_guide.pdf"
+  },
+  {
+    "type": "direct",
+    "url": "https://www2.gov.bc.ca/assets/gov/public-safety-and-emergency-services/emergency-preparedness-response-recovery/embc/preparedbc/preparedbc-guides/preparedbc_emergency_preparedness_for_people_w_disability.pdf",
+    "folder": "preparedbc_emergency_preparedness_for_people_w_disability",
+    "filename": "preparedbc_emergency_preparedness_for_people_w_disability.pdf"
+  },
+  {
+    "type": "direct",
+    "url": "https://www2.gov.bc.ca/assets/gov/public-safety-and-emergency-services/emergency-preparedness-response-recovery/embc/preparedbc/preparedbc-guides/preparedbc_neighbourhood_guide.pdf",
+    "folder": "preparedbc_neighbourhood_guide",
+    "filename": "preparedbc_neighbourhood_guide.pdf"
   }
 ] 
