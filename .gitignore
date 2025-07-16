@@ -21,6 +21,7 @@ PRD.md
 /data-prep/json/embeddings/*.json
 /data-prep/json/final/*.json
 !/data-prep/json/final/*.md
+/data-prep/json/generated/*.json
 
 /medical_gemma_hf
 /llama.cpp
