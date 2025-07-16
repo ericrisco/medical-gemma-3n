@@ -18,5 +18,10 @@ PRD.md
 .env
 
 /data-prep/json/*.json
+/data-prep/json/embeddings/*.json
 /data-prep/json/final/*.json
 !/data-prep/json/final/*.md
+
+/medical_gemma_hf
+/llama.cpp
+/medical_gemma_gguf
