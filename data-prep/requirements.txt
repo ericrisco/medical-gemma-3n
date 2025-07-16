@@ -6,6 +6,8 @@ PyPDF2
 cohere
 faiss-cpu
 tqdm
-dotenv
+python-dotenv
 langchain
 huggingface_hub
+requests
+numpy
