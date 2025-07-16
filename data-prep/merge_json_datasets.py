@@ -6,8 +6,8 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-DIR_PATH = 'data-prep/json'
-OUT_PATH = 'data-prep/json/final/medical_training_dataset.json'
+DIR_PATH = 'json'
+OUT_PATH = 'json/final/medical_training_dataset.json'
 EXCLUDE = {'pdf_embeddings.json'}
 HUGGING_FACE_TOKEN = os.getenv("HUGGING_FACE_TOKEN")
 
