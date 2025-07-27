@@ -1,0 +1,6 @@
+datasets>=2.20.0
+pyarrow>=14.0.2
+ollama>=0.2.0
+tqdm>=4.66.1
+openai>=1.65.0
+dotenv
