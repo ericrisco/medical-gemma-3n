@@ -56,6 +56,9 @@ python prepare_medical_o1_reasoning_sft.py
 - **Source**: `FreedomIntelligence/medical-o1-reasoning-SFT`
 - **Output**: `json/medical_o1_reasoning_sft.json`
 - **Content**: Clinical reasoning chains for supervised fine-tuning
+- **Processing**: Combines `Complex_CoT` (reasoning) and `Response` fields into structured format
+- **Format**: `{"input": "Question", "context": "", "output": "<reasoning>...</reasoning>\nResponse"}`
+- **Purpose**: Teaches the model to show clinical reasoning before giving answers
 
 #### 2. Medical O1 Verifiable Problems (40,316 examples)
 ```bash
@@ -64,6 +67,9 @@ python prepare_medical_o1_verifiable_problem.py
 - **Source**: `FreedomIntelligence/medical-o1-verifiable-problem`
 - **Output**: `json/medical_o1_verifiable_problem.json`
 - **Content**: Evidence-based medical problems with verifiable answers
+- **Processing**: Maps open-ended questions to ground-truth answers with deduplication
+- **Features**: Incremental saving, duplicate detection, progress tracking
+- **Purpose**: Provides evidence-based medical Q&A with verifiable sources
 
 #### 3. Medical QA Dataset (10,177 examples)
 ```bash
@@ -72,6 +78,10 @@ python prepare_medqa.py
 - **Source**: `truehealth/medqa`
 - **Output**: `json/medqa.json`
 - **Content**: Medical licensing exam questions with explanations
+- **AI Enhancement**: Uses Ollama Gemma3n to generate detailed explanations for each answer
+- **Processing**: Takes multiple-choice questions and creates comprehensive explanations
+- **Features**: Professional medical tone, evidence-based reasoning, incremental saving
+- **Purpose**: Enhances basic Q&A with detailed clinical explanations
 
 #### 4. Wiki Medical Terms (9,528 examples)
 ```bash
@@ -80,6 +90,10 @@ python prepare_wiki_medical_terms.py
 - **Source**: `gamino/wiki_medical_terms`
 - **Output**: `json/wiki_medical_terms.json`
 - **Content**: Medical terminology definitions and explanations
+- **AI Enhancement**: Generates specific medical questions and answers using context
+- **Processing**: Creates Q&A pairs from medical terminology definitions
+- **Features**: Medical-specific filtering, concise questions (max 20 words), duplicate prevention
+- **Purpose**: Provides medical terminology Q&A for professional medical knowledge
 
 #### 5. Synthetic Disaster Reports (1,000 examples)
 ```bash
@@ -88,6 +102,10 @@ python prepare_synthetic_disaster_reports.py
 - **Source**: `paulelliotco/synthetic-disaster-reports`
 - **Output**: `json/synthetic_disaster_reports.json`
 - **Content**: Emergency response scenarios and resource planning
+- **Processing**: Maps disaster situations to required resources and response protocols
+- **Features**: Combines disaster type, severity, responder notes, and resource needs
+- **Format**: Creates structured emergency scenarios with resource requirements
+- **Purpose**: Provides emergency response training data for disaster situations
 
 #### 6. Symptom to Diagnosis (849 examples)
 ```bash
@@ -96,6 +114,10 @@ python prepare_symptom_to_diagnosis.py
 - **Source**: `gretelai/symptom_to_diagnosis`
 - **Output**: `json/symptom_to_diagnosis.json`
 - **Content**: Symptom analysis and differential diagnosis
+- **AI Enhancement**: Uses Ollama to generate professional medical responses
+- **Processing**: Converts symptom-diagnosis pairs into natural medical language
+- **Features**: Professional medical tone, clinical reasoning, incremental saving
+- **Purpose**: Provides symptom-based diagnostic training data
 
 #### 7. Medication QA (690 examples)
 ```bash
@@ -104,6 +126,9 @@ python prepare_medicationqa.py
 - **Source**: `truehealth/medicationqa`
 - **Output**: `json/medicationqa.json`
 - **Content**: Medication information and drug interactions
+- **Processing**: Direct Q&A format for medication-related questions
+- **Features**: Simple mapping from question to answer fields
+- **Purpose**: Provides medication and drug interaction knowledge
 
 #### 8. Diseases and Symptoms (394 examples)
 ```bash
@@ -112,6 +137,10 @@ python prepare_diseases_symptoms.py
 - **Source**: `QuyenAnhDE/Diseases_Symptoms`
 - **Output**: `json/diseases_symptoms.json`
 - **Content**: Disease symptomatology and diagnostic criteria
+- **Processing**: Maps symptoms to disease names and treatment recommendations
+- **Features**: Combines symptoms, disease name, and treatments into structured format
+- **Format**: Creates treatment recommendations based on symptoms
+- **Purpose**: Provides disease symptomatology and treatment guidance
 
 #### 9. First Aid Dataset (26 examples)
 ```bash
@@ -120,6 +149,9 @@ python prepare_first_aid_dataset.py
 - **Source**: `badri55/First_aid__dataset`
 - **Output**: `json/first_aid_dataset.json`
 - **Content**: Basic first aid procedures
+- **Processing**: Pattern-response pairs for emergency first aid guidance
+- **Features**: Maps patterns to responses for first aid scenarios
+- **Purpose**: Provides basic first aid procedure training data
 
 ### Phase 2: PDF Knowledge Vectorization
 
@@ -151,6 +183,150 @@ python vectorizing_medical_knowledge.py --type combined
 - **Incremental Saving**: Saves progress after each batch to prevent data loss
 
 **⚠️ CRITICAL**: Must complete before Phase 3 RAG generation
+
+## 📄 PDF Knowledge Vectorization - Deep Dive
+
+### 🎯 Purpose & Overview
+
+The PDF vectorization process transforms official medical documents into searchable knowledge embeddings. This is the **foundation** for the RAG pipeline that generates synthetic medical Q&A.
+
+### 📚 Source Documents
+
+**14 Official Medical PDFs from authoritative sources:**
+
+| Organization | Documents | Medical Domain |
+|--------------|-----------|----------------|
+| **WHO (World Health Organization)** | Basic Emergency Care, EMS Guidelines, Surgical Care | International medical protocols |
+| **ICRC (International Red Cross)** | First Aid Guidelines, GFARC Guidelines | Emergency response standards |
+| **US Military** | Tactical Combat Casualty Care Handbook | Combat medical procedures |
+| **US FEMA** | CERT Basic Manual | Community emergency response |
+| **Canadian Government** | Mine Rescue Operations Handbook | Industrial emergency protocols |
+| **BC Government** | 6x Emergency Preparedness Guides | Natural disaster response |
+
+### 🔧 Technical Implementation
+
+#### **Script: `vectorizing_medical_knowledge.py`**
+
+**Core Function:**
+```python
+def process_pdfs_to_embeddings(pdf_directory, output_file, pdf_type="combined"):
+    """
+    Process medical PDFs into searchable embeddings
+    - Extracts text from PDFs (handles encrypted/corrupted files)
+    - Chunks text into semantic units
+    - Generates embeddings using Cohere API
+    - Saves incrementally to prevent data loss
+    """
+```
+
+#### **Processing Pipeline:**
+
+1. **📄 PDF Text Extraction**
+   - **Tool**: LangChain PDF loaders with PyPDF2 fallback
+   - **Features**: Handles encrypted, corrupted, and complex PDFs
+   - **Error Handling**: Comprehensive reporting on extraction success/failure
+   - **Output**: Raw text from all medical documents
+
+2. **✂️ Smart Text Chunking**
+   - **Tool**: LangChain RecursiveCharacterTextSplitter
+   - **Chunk Size**: 512 tokens per chunk
+   - **Overlap**: 128 tokens between chunks
+   - **Rationale**: Medical concepts often span multiple sentences
+   - **Output**: Semantic chunks preserving medical context
+
+3. **🧠 Embedding Generation**
+   - **Model**: Cohere embed-v4.0 (high-quality embeddings)
+   - **Dimensions**: 1024-dimensional vectors
+   - **Quality**: Optimized for semantic similarity search
+   - **Rate Limiting**: Respects API limits with intelligent batching
+
+4. **💾 Incremental Storage**
+   - **Format**: JSON with text-embedding pairs
+   - **Structure**: `{"text": "medical content", "embedding": [0.1, 0.2, ...]}`
+   - **Safety**: Saves after each batch to prevent data loss
+   - **Output**: `medical_knowledge_embeddings.json`
+
+### 📊 Processing Statistics
+
+**Typical Output:**
+- **Total Chunks**: 15,000-25,000 medical text chunks
+- **File Size**: 50-100 MB of embeddings
+- **Processing Time**: 2-4 hours (depending on PDF complexity)
+- **Success Rate**: 95%+ text extraction success
+
+### 🚀 Usage Options
+
+```bash
+# Process all PDFs (recommended)
+python vectorizing_medical_knowledge.py --type combined
+
+# Process only first aid PDFs
+python vectorizing_medical_knowledge.py --type firstaid
+
+# Process only rescue/emergency PDFs  
+python vectorizing_medical_knowledge.py --type rescue
+```
+
+### 🔍 Quality Control Features
+
+- **Robust PDF Handling**: Manages various PDF formats and corruption
+- **Semantic Chunking**: Preserves medical context across chunk boundaries
+- **Error Reporting**: Detailed statistics on processing success/failure
+- **Incremental Saving**: Prevents data loss during long processing
+- **Memory Management**: Efficient handling of large PDF collections
+
+### 📈 Output Format
+
+```json
+[
+  {
+    "text": "In cases of severe bleeding, apply direct pressure to the wound...",
+    "embedding": [0.123, -0.456, 0.789, ...]
+  },
+  {
+    "text": "Vital signs assessment includes blood pressure, heart rate...",
+    "embedding": [0.234, -0.567, 0.890, ...]
+  }
+]
+```
+
+### 🔗 Integration with RAG Pipeline
+
+The vectorized knowledge serves as the **knowledge base** for:
+- **Question Generation**: Provides medical context for AI question creation
+- **Answer Retrieval**: Enables similarity search for relevant medical information
+- **Context Enhancement**: Supplies evidence-based medical protocols for answers
+
+### ⚠️ Critical Dependencies
+
+- **Cohere API Key**: Required for embedding generation
+- **Sufficient Storage**: 100MB+ for embeddings file
+- **Internet Connection**: Required for API calls
+- **Processing Time**: 2-4 hours for complete dataset
+
+### 🔧 Script Processing Features
+
+**Common Features Across All Scripts:**
+- **🔄 Incremental Processing**: All scripts save progress after each example to prevent data loss
+- **📋 Deduplication**: Prevents duplicate entries using input text comparison
+- **📊 Progress Tracking**: Real-time progress indicators and statistics
+- **⚡ Error Resilience**: Comprehensive error handling and graceful failure recovery
+- **🌍 Unicode Support**: Proper handling of international medical content
+- **📁 Output Standardization**: All scripts produce consistent JSON format
+
+**AI-Enhanced Scripts:**
+- **`prepare_medqa.py`**: Uses Ollama Gemma3n for detailed answer explanations
+- **`prepare_wiki_medical_terms.py`**: Generates medical Q&A from terminology definitions
+- **`prepare_symptom_to_diagnosis.py`**: Converts symptom-diagnosis pairs to natural language
+- **`generate_advanced_firstaid_qa.py`**: Full RAG pipeline with FAISS and Ollama
+
+**Simple Processing Scripts:**
+- **`prepare_medical_o1_reasoning_sft.py`**: Direct field mapping with reasoning combination
+- **`prepare_medical_o1_verifiable_problem.py`**: Question-answer mapping with deduplication
+- **`prepare_medicationqa.py`**: Simple Q&A field mapping
+- **`prepare_diseases_symptoms.py`**: Symptom-treatment mapping
+- **`prepare_first_aid_dataset.py`**: Pattern-response mapping
+- **`prepare_synthetic_disaster_reports.py`**: Disaster scenario to resource mapping
 
 ### Phase 3: RAG-Based Synthetic Data Generation
 
