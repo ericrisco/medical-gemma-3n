@@ -1,3 +1,91 @@
+# Miscellaneous
+*.class
+*.log
+*.pyc
+*.swp
+.DS_Store
+.atom/
+.buildlog/
+.history
+.svn/
+migrate_working_dir/
+
+# IntelliJ related
+*.iml
+*.ipr
+*.iws
+.idea/
+
+# The .vscode folder contains launch configuration and tasks you configure in
+# VS Code which you may wish to be included in version control, so this line
+# is commented out by default.
+#.vscode/
+
+# Flutter/Dart/Pub related
+**/doc/api/
+**/ios/Flutter/.last_build_id
+.dart_tool/
+.flutter-plugins
+.flutter-plugins-dependencies
+.packages
+.pub-cache/
+.pub/
+/build/
+
+# Symbolication related
+app.*.symbols
+
+# Obfuscation related
+app.*.map.json
+
+# Android Studio will place build artifacts here
+/android/app/debug
+/android/app/profile
+/android/app/release
+
+# iOS related
+**/ios/**/*.mode1v3
+**/ios/**/*.mode2v3
+**/ios/**/*.moved-aside
+**/ios/**/*.pbxuser
+**/ios/**/*.perspectivev3
+**/ios/**/*sync/
+**/ios/**/.sconsign.dblite
+**/ios/**/.tags*
+**/ios/**/.vagrant/
+**/ios/**/DerivedData/
+**/ios/**/Icon?
+**/ios/**/Pods/
+**/ios/**/.symlinks/
+**/ios/**/profile
+**/ios/**/xcuserdata
+**/ios/.generated/
+**/ios/Flutter/App.framework
+**/ios/Flutter/Flutter.framework
+**/ios/Flutter/Flutter.podspec
+**/ios/Flutter/Generated.xcconfig
+**/ios/Flutter/ephemeral/
+**/ios/Flutter/app.flx
+**/ios/Flutter/app.zip
+**/ios/Flutter/flutter_assets/
+**/ios/Flutter/flutter_export_environment.sh
+**/ios/ServiceDefinitions.json
+**/ios/Runner/GeneratedPluginRegistrant.*
+
+# macOS related
+**/macos/Flutter/GeneratedPluginRegistrant.swift
+
+# Coverage
+coverage/
+
+# Symbols
+app.*.symbols
+
+# Exceptions to above rules.
+!**/ios/.gitkeep
+!**/lib/generated_plugin_registrant.dart
+
+# Project specific
 # Ignore credentials content, but keep the folder
 /credentials/*
 !/credentials/
@@ -11,8 +99,6 @@
 /plan
 PRD.md
 
-.DS_Store
-
 */__pycache__
 
 .env
@@ -23,6 +109,11 @@ PRD.md
 !/data-prep/json/final/*.md
 /data-prep/json/generated/*.json
 
-/medical_gemma_hf
-/llama.cpp
-/medical_gemma_gguf
+# Flutter Gemma model files (large)
+/app/assets/models/
+/app/build/
+/app/.flutter-plugins
+/app/.flutter-plugins-dependencies
+
+/evaluation/.venv/
+/evaluation/.env
