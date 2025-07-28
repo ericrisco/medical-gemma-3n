@@ -1,0 +1,3613 @@
+{
+  "AF": {
+    "country_name": "Afghanistan",
+    "country_code": "93",
+    "emergency_numbers": {
+      "Ambulance": {
+        "All": [
+          "112"
+        ]
+      },
+      "Fire": {
+        "All": [
+          "119"
+        ]
+      },
+      "Police": {
+        "All": [
+          "119"
+        ]
+      }
+    }
+  },
+  "AX": {
+    "country_name": "Aland Islands",
+    "country_code": "+358-18",
+    "emergency_numbers": {
+      "Ambulance": {
+        "All": [
+          "112"
+        ]
+      },
+      "Fire": {
+        "All": [
+          "112"
+        ]
+      },
+      "Police": {
+        "All": [
+          "112"
+        ]
+      }
+    }
+  },
+  "AL": {
+    "country_name": "Albania",
+    "country_code": "355",
+    "emergency_numbers": {
+      "Ambulance": {
+        "All": [
+          "127"
+        ]
+      },
+      "Fire": {
+        "All": [
+          "128"
+        ]
+      },
+      "Police": {
+        "All": [
+          "129"
+        ]
+      }
+    }
+  },
+  "DZ": {
+    "country_name": "Algeria",
+    "country_code": "213",
+    "emergency_numbers": {
+      "Ambulance": {
+        "All": [
+          "21606666"
+        ]
+      },
+      "Fire": {
+        "All": [
+          "14"
+        ]
+      },
+      "Police": {
+        "All": [
+          "1548"
+        ]
+      },
+      "Dispatch": {
+        "Fixed": [
+          "19"
+        ]
+      }
+    }
+  },
+  "AS": {
+    "country_name": "American Samoa",
+    "country_code": "+1-684",
+    "emergency_numbers": {
+      "Dispatch": {
+        "All": [
+          "911"
+        ]
+      }
+    }
+  },
+  "AD": {
+    "country_name": "Andorra",
+    "country_code": "376",
+    "emergency_numbers": {
+      "Ambulance": {
+        "All": [
+          "118",
+          "112"
+        ]
+      },
+      "Fire": {
+        "All": [
+          "118",
+          "112"
+        ]
+      },
+      "Police": {
+        "All": [
+          "110"
+        ]
+      }
+    }
+  },
+  "AO": {
+    "country_name": "Angola",
+    "country_code": "244",
+    "emergency_numbers": {
+      "Ambulance": {
+        "All": [
+          "118"
+        ]
+      },
+      "Fire": {
+        "All": [
+          "118"
+        ]
+      },
+      "Police": {
+        "All": [
+          "110"
+        ]
+      }
+    }
+  },
+  "AI": {
+    "country_name": "Anguilla",
+    "country_code": "+1-264",
+    "emergency_numbers": {}
+  },
+  "AQ": {
+    "country_name": "Antarctica",
+    "country_code": "",
+    "emergency_numbers": {}
+  },
+  "AG": {
+    "country_name": "Antigua and Barbuda",
+    "country_code": "+1-268",
+    "emergency_numbers": {
+      "Dispatch": {
+        "All": [
+          "999",
+          "911"
+        ]
+      }
+    }
+  },
+  "AR": {
+    "country_name": "Argentina",
+    "country_code": "54",
+    "emergency_numbers": {
+      "Ambulance": {
+        "All": [
+          "101"
+        ]
+      },
+      "Fire": {
+        "All": [
+          "107"
+        ]
+      },
+      "Police": {
+        "All": [
+          "101"
+        ]
+      }
+    }
+  },
+  "AM": {
+    "country_name": "Armenia",
+    "country_code": "374",
+    "emergency_numbers": {
+      "Ambulance": {
+        "All": [
+          "103"
+        ]
+      },
+      "Fire": {
+        "All": [
+          "102"
+        ]
+      },
+      "Police": {
+        "All": [
+          "101"
+        ]
+      },
+      "Dispatch": {
+        "All": [
+          "911"
+        ]
+      }
+    }
+  },
+  "AW": {
+    "country_name": "Aruba",
+    "country_code": "297",
+    "emergency_numbers": {
+      "Dispatch": {
+        "All": [
+          "911"
+        ]
+      }
+    }
+  },
+  "AU": {
+    "country_name": "Australia",
+    "country_code": "61",
+    "emergency_numbers": {
+      "Dispatch": {
+        "Fixed": [
+          "000"
+        ],
+        "GSM": [
+          "112"
+        ]
+      }
+    }
+  },
+  "AT": {
+    "country_name": "Austria",
+    "country_code": "43",
+    "emergency_numbers": {
+      "Ambulance": {
+        "All": [
+          "144"
+        ]
+      },
+      "Fire": {
+        "All": [
+          "133"
+        ]
+      },
+      "Police": {
+        "All": [
+          "133"
+        ]
+      }
+    }
+  },
+  "AZ": {
+    "country_name": "Azerbaijan",
+    "country_code": "994",
+    "emergency_numbers": {
+      "Ambulance": {
+        "All": [
+          "103"
+        ]
+      },
+      "Fire": {
+        "All": [
+          "101"
+        ]
+      },
+      "Police": {
+        "All": [
+          "102"
+        ]
+      }
+    }
+  },
+  "BS": {
+    "country_name": "Bahamas",
+    "country_code": "+1-242",
+    "emergency_numbers": {
+      "Dispatch": {
+        "All": [
+          "911"
+        ]
+      }
+    }
+  },
+  "BH": {
+    "country_name": "Bahrain",
+    "country_code": "973",
+    "emergency_numbers": {
+      "Dispatch": {
+        "All": [
+          "999"
+        ]
+      }
+    }
+  },
+  "BD": {
+    "country_name": "Bangladesh",
+    "country_code": "880",
+    "emergency_numbers": {
+      "Ambulance": {
+        "All": [
+          "199"
+        ]
+      },
+      "Fire": {
+        "All": [
+          "9555555"
+        ]
+      },
+      "Police": {
+        "All": [
+          "865513"
+        ]
+      },
+      "Dispatch": {
+        "All": [
+          "999"
+        ]
+      }
+    }
+  },
+  "BB": {
+    "country_name": "Barbados",
+    "country_code": "+1-246",
+    "emergency_numbers": {
+      "Ambulance": {
+        "All": [
+          "511"
+        ]
+      },
+      "Fire": {
+        "All": [
+          "311"
+        ]
+      },
+      "Police": {
+        "All": [
+          "211"
+        ]
+      }
+    }
+  },
+  "BY": {
+    "country_name": "Belarus",
+    "country_code": "375",
+    "emergency_numbers": {
+      "Ambulance": {
+        "All": [
+          "103"
+        ]
+      },
+      "Fire": {
+        "All": [
+          "101",
+          "112"
+        ]
+      },
+      "Police": {
+        "All": [
+          "102"
+        ]
+      }
+    }
+  },
+  "BE": {
+    "country_name": "Belgium",
+    "country_code": "32",
+    "emergency_numbers": {
+      "Ambulance": {
+        "All": [
+          "103"
+        ]
+      },
+      "Fire": {
+        "All": [
+          "101"
+        ]
+      },
+      "Police": {
+        "All": [
+          "102"
+        ]
+      }
+    }
+  },
+  "BZ": {
+    "country_name": "Belize",
+    "country_code": "501",
+    "emergency_numbers": {
+      "Dispatch": {
+        "All": [
+          "911"
+        ]
+      }
+    }
+  },
+  "BJ": {
+    "country_name": "Benin",
+    "country_code": "229",
+    "emergency_numbers": {}
+  },
+  "BM": {
+    "country_name": "Bermuda",
+    "country_code": "+1-441",
+    "emergency_numbers": {
+      "Dispatch": {
+        "All": [
+          "911"
+        ]
+      }
+    }
+  },
+  "BT": {
+    "country_name": "Bhutan",
+    "country_code": "975",
+    "emergency_numbers": {
+      "Ambulance": {
+        "All": [
+          "110"
+        ]
+      },
+      "Fire": {
+        "All": [
+          "112"
+        ]
+      },
+      "Police": {
+        "All": [
+          "113"
+        ]
+      }
+    }
+  },
+  "BO": {
+    "country_name": "Bolivia",
+    "country_code": "591",
+    "emergency_numbers": {
+      "Dispatch": {
+        "All": [
+          "911"
+        ]
+      }
+    }
+  },
+  "BQ": {
+    "country_name": "Bonaire, Saint Eustatius and Saba ",
+    "country_code": "599",
+    "emergency_numbers": {
+      "Dispatch": {
+        "All": [
+          "911"
+        ]
+      }
+    }
+  },
+  "BA": {
+    "country_name": "Bosnia and Herzegovina",
+    "country_code": "387",
+    "emergency_numbers": {
+      "Ambulance": {
+        "All": [
+          "124"
+        ]
+      },
+      "Fire": {
+        "All": [
+          "123"
+        ]
+      },
+      "Police": {
+        "All": [
+          "122"
+        ]
+      }
+    }
+  },
+  "BW": {
+    "country_name": "Botswana",
+    "country_code": "267",
+    "emergency_numbers": {
+      "Dispatch": {
+        "All": [
+          "997",
+          " 911"
+        ]
+      }
+    }
+  },
+  "BV": {
+    "country_name": "Bouvet Island",
+    "country_code": "",
+    "emergency_numbers": {}
+  },
+  "BR": {
+    "country_name": "Brazil",
+    "country_code": "55",
+    "emergency_numbers": {
+      "Ambulance": {
+        "All": [
+          "192"
+        ]
+      },
+      "Fire": {
+        "All": [
+          "193"
+        ]
+      }
+    }
+  },
+  "IO": {
+    "country_name": "British Indian Ocean Territory",
+    "country_code": "246",
+    "emergency_numbers": {}
+  },
+  "BN": {
+    "country_name": "Brunei",
+    "country_code": "673",
+    "emergency_numbers": {
+      "Ambulance": {
+        "All": [
+          "991"
+        ]
+      },
+      "Fire": {
+        "All": [
+          "995"
+        ]
+      },
+      "Police": {
+        "All": [
+          "993"
+        ]
+      }
+    }
+  },
+  "BG": {
+    "country_name": "Bulgaria",
+    "country_code": "359",
+    "emergency_numbers": {
+      "Ambulance": {
+        "All": [
+          "150"
+        ]
+      },
+      "Fire": {
+        "All": [
+          "160"
+        ]
+      },
+      "Police": {
+        "All": [
+          "166"
+        ]
+      }
+    }
+  },
+  "BF": {
+    "country_name": "Burkina Faso",
+    "country_code": "226",
+    "emergency_numbers": {}
+  },
+  "BI": {
+    "country_name": "Burundi",
+    "country_code": "257",
+    "emergency_numbers": {}
+  },
+  "CV": {
+    "country_name": "Cape Verde",
+    "country_code": "238",
+    "emergency_numbers": {
+      "Ambulance": {
+        "All": [
+          "130"
+        ]
+      },
+      "Fire": {
+        "All": [
+          "131"
+        ]
+      },
+      "Police": {
+        "All": [
+          "132"
+        ]
+      }
+    }
+  },
+  "KH": {
+    "country_name": "Cambodia",
+    "country_code": "855",
+    "emergency_numbers": {
+      "Ambulance": {
+        "All": [
+          "119"
+        ]
+      },
+      "Fire": {
+        "All": [
+          "118"
+        ]
+      },
+      "Police": {
+        "All": [
+          "117"
+        ]
+      }
+    }
+  },
+  "CM": {
+    "country_name": "Cameroon",
+    "country_code": "237",
+    "emergency_numbers": {}
+  },
+  "CA": {
+    "country_name": "Canada",
+    "country_code": "1",
+    "emergency_numbers": {
+      "Dispatch": {
+        "All": [
+          "911"
+        ],
+        "GSM": [
+          "112"
+        ]
+      }
+    }
+  },
+  "KY": {
+    "country_name": "Cayman Islands",
+    "country_code": "+1-345",
+    "emergency_numbers": {
+      "Dispatch": {
+        "All": [
+          "911"
+        ]
+      }
+    }
+  },
+  "CF": {
+    "country_name": "Central African Republic",
+    "country_code": "236",
+    "emergency_numbers": {}
+  },
+  "TD": {
+    "country_name": "Chad",
+    "country_code": "235",
+    "emergency_numbers": {
+      "Fire": {
+        "All": [
+          "18"
+        ]
+      },
+      "Police": {
+        "All": [
+          "17"
+        ]
+      }
+    }
+  },
+  "CL": {
+    "country_name": "Chile",
+    "country_code": "56",
+    "emergency_numbers": {
+      "Ambulance": {
+        "All": [
+          "131"
+        ]
+      },
+      "Fire": {
+        "All": [
+          "132"
+        ]
+      },
+      "Police": {
+        "All": [
+          "133"
+        ]
+      }
+    }
+  },
+  "CN": {
+    "country_name": "China",
+    "country_code": "86",
+    "emergency_numbers": {
+      "Ambulance": {
+        "All": [
+          "120"
+        ]
+      },
+      "Fire": {
+        "All": [
+          "119"
+        ]
+      },
+      "Police": {
+        "All": [
+          "110"
+        ]
+      },
+      "Traffic": {
+        "All": [
+          "122"
+        ]
+      }
+    }
+  },
+  "CX": {
+    "country_name": "Christmas Island",
+    "country_code": "61",
+    "emergency_numbers": {}
+  },
+  "CC": {
+    "country_name": "Cocos Islands",
+    "country_code": "61",
+    "emergency_numbers": {}
+  },
+  "CO": {
+    "country_name": "Colombia",
+    "country_code": "57",
+    "emergency_numbers": {
+      "Ambulance": {
+        "All": [
+          "125"
+        ]
+      },
+      "Fire": {
+        "All": [
+          "119"
+        ]
+      },
+      "Police": {
+        "All": [
+          "112"
+        ]
+      },
+      "Dispatch": {
+        "All": [
+          "123"
+        ]
+      }
+    }
+  },
+  "KM": {
+    "country_name": "Comoros",
+    "country_code": "269",
+    "emergency_numbers": {}
+  },
+  "CG": {
+    "country_name": "Republic of the Congo",
+    "country_code": "242",
+    "emergency_numbers": {}
+  },
+  "CD": {
+    "country_name": "Democratic Republic of the Congo",
+    "country_code": "243",
+    "emergency_numbers": {}
+  },
+  "CK": {
+    "country_name": "Cook Islands",
+    "country_code": "682",
+    "emergency_numbers": {
+      "Ambulance": {
+        "All": [
+          "998"
+        ]
+      },
+      "Fire": {
+        "All": [
+          "996"
+        ]
+      },
+      "Police": {
+        "All": [
+          "999"
+        ]
+      }
+    }
+  },
+  "CR": {
+    "country_name": "Costa Rica",
+    "country_code": "506",
+    "emergency_numbers": {
+      "Dispatch": {
+        "All": [
+          "911"
+        ]
+      }
+    }
+  },
+  "CI": {
+    "country_name": "Ivory Coast",
+    "country_code": "225",
+    "emergency_numbers": {
+      "Fire": {
+        "All": [
+          "180"
+        ]
+      },
+      "Police": {
+        "All": [
+          "110",
+          "111",
+          "170"
+        ]
+      }
+    }
+  },
+  "HR": {
+    "country_name": "Croatia",
+    "country_code": "385",
+    "emergency_numbers": {
+      "Ambulance": {
+        "All": [
+          "194"
+        ]
+      },
+      "Fire": {
+        "All": [
+          "193"
+        ]
+      },
+      "Police": {
+        "All": [
+          "192"
+        ]
+      }
+    }
+  },
+  "CU": {
+    "country_name": "Cuba",
+    "country_code": "53",
+    "emergency_numbers": {
+      "Dispatch": {
+        "All": [
+          "26811"
+        ]
+      }
+    }
+  },
+  "CW": {
+    "country_name": "Curacao",
+    "country_code": "599",
+    "emergency_numbers": {
+      "Ambulance": {
+        "All": [
+          "112"
+        ]
+      },
+      "Fire": {
+        "All": [
+          "114"
+        ]
+      },
+      "Police": {
+        "All": [
+          "444444"
+        ]
+      }
+    }
+  },
+  "CY": {
+    "country_name": "Cyprus",
+    "country_code": "357",
+    "emergency_numbers": {
+      "Dispatch": {
+        "All": [
+          "199"
+        ]
+      }
+    }
+  },
+  "CZ": {
+    "country_name": "Czech Republic",
+    "country_code": "420",
+    "emergency_numbers": {
+      "Ambulance": {
+        "All": [
+          "155"
+        ]
+      },
+      "Fire": {
+        "All": [
+          "150"
+        ]
+      },
+      "Police": {
+        "All": [
+          "158"
+        ]
+      }
+    }
+  },
+  "DK": {
+    "country_name": "Denmark",
+    "country_code": "45",
+    "emergency_numbers": {
+      "Police": {
+        "All": [
+          "114"
+        ]
+      }
+    }
+  },
+  "DJ": {
+    "country_name": "Djibouti",
+    "country_code": "253",
+    "emergency_numbers": {
+      "Ambulance": {
+        "All": [
+          "351351"
+        ]
+      },
+      "Fire": {
+        "All": [
+          "18"
+        ]
+      },
+      "Police": {
+        "All": [
+          "17"
+        ]
+      }
+    }
+  },
+  "DM": {
+    "country_name": "Dominica",
+    "country_code": "+1-767",
+    "emergency_numbers": {
+      "Dispatch": {
+        "All": [
+          "999"
+        ]
+      }
+    }
+  },
+  "DO": {
+    "country_name": "Dominican Republic",
+    "country_code": "+1-809 and 1-829",
+    "emergency_numbers": {
+      "Dispatch": {
+        "All": [
+          "911"
+        ]
+      }
+    }
+  },
+  "EC": {
+    "country_name": "Ecuador",
+    "country_code": "593",
+    "emergency_numbers": {
+      "Ambulance": {
+        "All": [
+          "131"
+        ]
+      },
+      "Police": {
+        "All": [
+          "101"
+        ]
+      }
+    }
+  },
+  "EG": {
+    "country_name": "Egypt",
+    "country_code": "20",
+    "emergency_numbers": {
+      "Ambulance": {
+        "All": [
+          "123"
+        ]
+      },
+      "Fire": {
+        "All": [
+          "180"
+        ]
+      },
+      "Police": {
+        "All": [
+          "122"
+        ]
+      }
+    }
+  },
+  "SV": {
+    "country_name": "El Salvador",
+    "country_code": "503",
+    "emergency_numbers": {
+      "Dispatch": {
+        "All": [
+          "999"
+        ]
+      }
+    }
+  },
+  "GQ": {
+    "country_name": "Equatorial Guinea",
+    "country_code": "240",
+    "emergency_numbers": {}
+  },
+  "ER": {
+    "country_name": "Eritrea",
+    "country_code": "291",
+    "emergency_numbers": {}
+  },
+  "EE": {
+    "country_name": "Estonia",
+    "country_code": "372",
+    "emergency_numbers": {
+      "Ambulance": {
+        "All": [
+          "112"
+        ]
+      },
+      "Fire": {
+        "All": [
+          "112"
+        ]
+      },
+      "Police": {
+        "All": [
+          "110"
+        ]
+      }
+    }
+  },
+  "ET": {
+    "country_name": "Ethiopia",
+    "country_code": "251",
+    "emergency_numbers": {
+      "Ambulance": {
+        "All": [
+          "92"
+        ]
+      },
+      "Fire": {
+        "All": [
+          "93"
+        ]
+      },
+      "Police": {
+        "All": [
+          "91"
+        ]
+      }
+    }
+  },
+  "FK": {
+    "country_name": "Falkland Islands",
+    "country_code": "500",
+    "emergency_numbers": {
+      "Dispatch": {
+        "All": [
+          "999"
+        ]
+      }
+    }
+  },
+  "FO": {
+    "country_name": "Faroe Islands",
+    "country_code": "298",
+    "emergency_numbers": {}
+  },
+  "FJ": {
+    "country_name": "Fiji",
+    "country_code": "679",
+    "emergency_numbers": {
+      "Dispatch": {
+        "All": [
+          "911"
+        ]
+      }
+    }
+  },
+  "FI": {
+    "country_name": "Finland",
+    "country_code": "358",
+    "emergency_numbers": {}
+  },
+  "FR": {
+    "country_name": "France",
+    "country_code": "33",
+    "emergency_numbers": {
+      "Ambulance": {
+        "All": [
+          "15"
+        ]
+      },
+      "Fire": {
+        "All": [
+          "18"
+        ]
+      },
+      "Police": {
+        "All": [
+          "17"
+        ]
+      }
+    }
+  },
+  "GF": {
+    "country_name": "French Guiana",
+    "country_code": "594",
+    "emergency_numbers": {
+      "Ambulance": {
+        "All": [
+          "15"
+        ]
+      },
+      "Fire": {
+        "All": [
+          "18"
+        ]
+      },
+      "Police": {
+        "All": [
+          "17"
+        ]
+      },
+      "Dispatch": {
+        "All": [
+          "112"
+        ]
+      }
+    }
+  },
+  "PF": {
+    "country_name": "French Polynesia",
+    "country_code": "689",
+    "emergency_numbers": {
+      "Ambulance": {
+        "All": [
+          "15"
+        ]
+      },
+      "Fire": {
+        "All": [
+          "18"
+        ]
+      },
+      "Police": {
+        "All": [
+          "17"
+        ]
+      }
+    }
+  },
+  "TF": {
+    "country_name": "French Southern Territories",
+    "country_code": "",
+    "emergency_numbers": {
+      "Ambulance": {
+        "All": [
+          "No Permanent Population"
+        ]
+      }
+    }
+  },
+  "GA": {
+    "country_name": "Gabon",
+    "country_code": "241",
+    "emergency_numbers": {
+      "Ambulance": {
+        "All": [
+          "1300‐1399"
+        ]
+      },
+      "Fire": {
+        "All": [
+          "18"
+        ]
+      },
+      "Police": {
+        "All": [
+          "1730"
+        ]
+      }
+    }
+  },
+  "GM": {
+    "country_name": "Gambia",
+    "country_code": "220",
+    "emergency_numbers": {
+      "Ambulance": {
+        "All": [
+          "16"
+        ]
+      },
+      "Fire": {
+        "All": [
+          "18"
+        ]
+      },
+      "Police": {
+        "All": [
+          "17"
+        ]
+      }
+    }
+  },
+  "GE": {
+    "country_name": "Georgia",
+    "country_code": "995",
+    "emergency_numbers": {}
+  },
+  "DE": {
+    "country_name": "Germany",
+    "country_code": "49",
+    "emergency_numbers": {
+      "Police": {
+        "All": [
+          "110"
+        ]
+      }
+    }
+  },
+  "GH": {
+    "country_name": "Ghana",
+    "country_code": "233",
+    "emergency_numbers": {
+      "Ambulance": {
+        "All": [
+          "776111-5"
+        ]
+      },
+      "Fire": {
+        "All": [
+          "192"
+        ]
+      },
+      "Police": {
+        "All": [
+          "999",
+          "171"
+        ]
+      }
+    }
+  },
+  "GI": {
+    "country_name": "Gibraltar",
+    "country_code": "350",
+    "emergency_numbers": {
+      "Fire": {
+        "All": [
+          "190"
+        ]
+      },
+      "Police": {
+        "All": [
+          "199"
+        ]
+      },
+      "Dispatch": {
+        "All": [
+          "999"
+        ]
+      }
+    }
+  },
+  "GR": {
+    "country_name": "Greece",
+    "country_code": "30",
+    "emergency_numbers": {
+      "Ambulance": {
+        "All": [
+          "166"
+        ]
+      },
+      "Fire": {
+        "All": [
+          "199"
+        ]
+      },
+      "Police": {
+        "All": [
+          "100"
+        ]
+      }
+    }
+  },
+  "GL": {
+    "country_name": "Greenland",
+    "country_code": "299",
+    "emergency_numbers": {}
+  },
+  "GD": {
+    "country_name": "Grenada",
+    "country_code": "+1-473",
+    "emergency_numbers": {
+      "Ambulance": {
+        "All": [
+          "434"
+        ]
+      },
+      "Fire": {
+        "All": [
+          "112"
+        ]
+      },
+      "Police": {
+        "All": [
+          "911"
+        ]
+      }
+    }
+  },
+  "GP": {
+    "country_name": "Guadeloupe",
+    "country_code": "590",
+    "emergency_numbers": {
+      "Ambulance": {
+        "All": [
+          "18"
+        ]
+      },
+      "Fire": {
+        "All": [
+          "18"
+        ]
+      },
+      "Police": {
+        "All": [
+          "17"
+        ]
+      }
+    }
+  },
+  "GU": {
+    "country_name": "Guam",
+    "country_code": "+1-671",
+    "emergency_numbers": {
+      "Dispatch": {
+        "All": [
+          "911"
+        ]
+      }
+    }
+  },
+  "GT": {
+    "country_name": "Guatemala",
+    "country_code": "502",
+    "emergency_numbers": {
+      "Ambulance": {
+        "All": [
+          "123"
+        ]
+      },
+      "Fire": {
+        "All": [
+          "123"
+        ]
+      },
+      "Police": {
+        "All": [
+          "110"
+        ]
+      }
+    }
+  },
+  "GG": {
+    "country_name": "Guernsey",
+    "country_code": "+44-1481",
+    "emergency_numbers": {}
+  },
+  "GN": {
+    "country_name": "Guinea",
+    "country_code": "224",
+    "emergency_numbers": {}
+  },
+  "GW": {
+    "country_name": "Guinea-Bissau",
+    "country_code": "245",
+    "emergency_numbers": {}
+  },
+  "GY": {
+    "country_name": "Guyana",
+    "country_code": "592",
+    "emergency_numbers": {
+      "Dispatch": {
+        "All": [
+          "999"
+        ]
+      }
+    }
+  },
+  "HT": {
+    "country_name": "Haiti",
+    "country_code": "509",
+    "emergency_numbers": {
+      "Ambulance": {
+        "All": [
+          "118"
+        ]
+      },
+      "Police": {
+        "All": [
+          "114"
+        ]
+      }
+    }
+  },
+  "HM": {
+    "country_name": "Heard Island and McDonald Islands",
+    "country_code": " ",
+    "emergency_numbers": {}
+  },
+  "VA": {
+    "country_name": "Vatican",
+    "country_code": "379",
+    "emergency_numbers": {
+      "Ambulance": {
+        "All": [
+          "118"
+        ]
+      },
+      "Fire": {
+        "All": [
+          "115"
+        ]
+      },
+      "Police": {
+        "All": [
+          "113"
+        ]
+      }
+    }
+  },
+  "HN": {
+    "country_name": "Honduras",
+    "country_code": "504",
+    "emergency_numbers": {
+      "Ambulance": {
+        "All": [
+          "195",
+          " 37 8654"
+        ]
+      },
+      "Fire": {
+        "All": [
+          "198"
+        ]
+      },
+      "Police": {
+        "All": [
+          "119"
+        ]
+      }
+    }
+  },
+  "HK": {
+    "country_name": "Hong Kong",
+    "country_code": "852",
+    "emergency_numbers": {
+      "Dispatch": {
+        "All": [
+          "999"
+        ],
+        "GSM": [
+          "112"
+        ]
+      }
+    }
+  },
+  "HU": {
+    "country_name": "Hungary",
+    "country_code": "36",
+    "emergency_numbers": {
+      "Ambulance": {
+        "All": [
+          "104"
+        ]
+      },
+      "Fire": {
+        "All": [
+          "101"
+        ]
+      },
+      "Police": {
+        "All": [
+          "107"
+        ]
+      }
+    }
+  },
+  "IS": {
+    "country_name": "Iceland",
+    "country_code": "354",
+    "emergency_numbers": {}
+  },
+  "IN": {
+    "country_name": "India",
+    "country_code": "91",
+    "emergency_numbers": {
+      "Ambulance": {
+        "All": [
+          "102"
+        ]
+      },
+      "Fire": {
+        "All": [
+          "101"
+        ]
+      },
+      "Police": {
+        "All": [
+          "101"
+        ]
+      },
+      "Traffic": {
+        "All": [
+          "103"
+        ]
+      }
+    }
+  },
+  "ID": {
+    "country_name": "Indonesia",
+    "country_code": "62",
+    "emergency_numbers": {
+      "Ambulance": {
+        "All": [
+          "118"
+        ]
+      },
+      "Fire": {
+        "All": [
+          "113"
+        ]
+      },
+      "Police": {
+        "All": [
+          "110"
+        ],
+        "GSM": [
+          "112"
+        ]
+      }
+    }
+  },
+  "IR": {
+    "country_name": "Iran",
+    "country_code": "98",
+    "emergency_numbers": {
+      "Ambulance": {
+        "All": [
+          "115"
+        ]
+      },
+      "Fire": {
+        "All": [
+          "123"
+        ]
+      },
+      "Police": {
+        "All": [
+          "110"
+        ],
+        "GSM": [
+          "112"
+        ]
+      }
+    }
+  },
+  "IQ": {
+    "country_name": "Iraq",
+    "country_code": "964",
+    "emergency_numbers": {}
+  },
+  "IE": {
+    "country_name": "Ireland",
+    "country_code": "353",
+    "emergency_numbers": {
+      "Dispatch": {
+        "All": [
+          "999"
+        ]
+      }
+    }
+  },
+  "IM": {
+    "country_name": "Isle of Man",
+    "country_code": "+44-1624",
+    "emergency_numbers": {
+      "Dispatch": {
+        "All": [
+          "999"
+        ]
+      }
+    }
+  },
+  "IL": {
+    "country_name": "Israel",
+    "country_code": "972",
+    "emergency_numbers": {
+      "Ambulance": {
+        "All": [
+          "101"
+        ]
+      },
+      "Fire": {
+        "All": [
+          "102"
+        ]
+      },
+      "Police": {
+        "All": [
+          "100"
+        ]
+      }
+    }
+  },
+  "IT": {
+    "country_name": "Italy",
+    "country_code": "39",
+    "emergency_numbers": {
+      "Ambulance": {
+        "All": [
+          "118"
+        ]
+      },
+      "Fire": {
+        "All": [
+          "115"
+        ]
+      },
+      "Police": {
+        "All": [
+          "113"
+        ]
+      }
+    }
+  },
+  "JM": {
+    "country_name": "Jamaica",
+    "country_code": "+1-876",
+    "emergency_numbers": {
+      "Ambulance": {
+        "All": [
+          "110"
+        ]
+      },
+      "Fire": {
+        "All": [
+          "110"
+        ]
+      },
+      "Police": {
+        "All": [
+          "119"
+        ]
+      }
+    }
+  },
+  "JP": {
+    "country_name": "Japan",
+    "country_code": "81",
+    "emergency_numbers": {
+      "Ambulance": {
+        "All": [
+          "119"
+        ]
+      },
+      "Fire": {
+        "All": [
+          "119"
+        ]
+      },
+      "Police": {
+        "All": [
+          "110"
+        ]
+      }
+    }
+  },
+  "JE": {
+    "country_name": "Jersey",
+    "country_code": "+44-1534",
+    "emergency_numbers": {
+      "Dispatch": {
+        "All": [
+          "999"
+        ]
+      }
+    }
+  },
+  "JO": {
+    "country_name": "Jordan",
+    "country_code": "962",
+    "emergency_numbers": {
+      "Ambulance": {
+        "All": [
+          "199"
+        ]
+      },
+      "Fire": {
+        "All": [
+          "199"
+        ]
+      },
+      "Police": {
+        "All": [
+          "191"
+        ]
+      },
+      "Traffic": {
+        "All": [
+          "190"
+        ]
+      },
+      "Dispatch": {
+        "All": [
+          "911"
+        ]
+      }
+    }
+  },
+  "KZ": {
+    "country_name": "Kazakhstan",
+    "country_code": "7",
+    "emergency_numbers": {
+      "Ambulance": {
+        "All": [
+          "103"
+        ]
+      },
+      "Fire": {
+        "All": [
+          "101"
+        ]
+      },
+      "Police": {
+        "All": [
+          "102"
+        ]
+      }
+    }
+  },
+  "KE": {
+    "country_name": "Kenya",
+    "country_code": "254",
+    "emergency_numbers": {
+      "Dispatch": {
+        "All": [
+          "999"
+        ]
+      }
+    }
+  },
+  "KI": {
+    "country_name": "Kiribati",
+    "country_code": "686",
+    "emergency_numbers": {
+      "Ambulance": {
+        "All": [
+          "994"
+        ]
+      },
+      "Fire": {
+        "All": [
+          "993"
+        ]
+      },
+      "Police": {
+        "All": [
+          "992"
+        ]
+      }
+    }
+  },
+  "KP": {
+    "country_name": "North Korea",
+    "country_code": "850",
+    "emergency_numbers": {}
+  },
+  "KR": {
+    "country_name": "South Korea",
+    "country_code": "82",
+    "emergency_numbers": {
+      "Ambulance": {
+        "All": [
+          "119"
+        ]
+      },
+      "Fire": {
+        "All": [
+          "119"
+        ]
+      },
+      "Police": {
+        "All": [
+          "112"
+        ]
+      }
+    }
+  },
+  "KW": {
+    "country_name": "Kuwait",
+    "country_code": "965",
+    "emergency_numbers": {
+      "Ambulance": {
+        "All": [
+          "777"
+        ]
+      }
+    }
+  },
+  "KG": {
+    "country_name": "Kyrgyzstan",
+    "country_code": "996",
+    "emergency_numbers": {
+      "Dispatch": {
+        "All": [
+          "103"
+        ]
+      }
+    }
+  },
+  "LA": {
+    "country_name": "Laos",
+    "country_code": "856",
+    "emergency_numbers": {}
+  },
+  "LV": {
+    "country_name": "Latvia",
+    "country_code": "371",
+    "emergency_numbers": {
+      "Ambulance": {
+        "All": [
+          "113"
+        ]
+      },
+      "Police": {
+        "All": [
+          "110"
+        ]
+      }
+    }
+  },
+  "LB": {
+    "country_name": "Lebanon",
+    "country_code": "961",
+    "emergency_numbers": {
+      "Ambulance": {
+        "All": [
+          "113"
+        ]
+      },
+      "Police": {
+        "All": [
+          "110",
+          "112"
+        ]
+      }
+    }
+  },
+  "LS": {
+    "country_name": "Lesotho",
+    "country_code": "266",
+    "emergency_numbers": {
+      "Ambulance": {
+        "All": [
+          "121"
+        ]
+      },
+      "Fire": {
+        "All": [
+          "122"
+        ]
+      },
+      "Police": {
+        "All": [
+          "123",
+          " 124"
+        ]
+      }
+    }
+  },
+  "LR": {
+    "country_name": "Liberia",
+    "country_code": "231",
+    "emergency_numbers": {
+      "Dispatch": {
+        "GSM": [
+          "911"
+        ]
+      }
+    }
+  },
+  "LY": {
+    "country_name": "Libya",
+    "country_code": "218",
+    "emergency_numbers": {
+      "Dispatch": {
+        "All": [
+          "193"
+        ]
+      }
+    }
+  },
+  "LI": {
+    "country_name": "Liechtenstein",
+    "country_code": "423",
+    "emergency_numbers": {
+      "Ambulance": {
+        "All": [
+          "144"
+        ]
+      },
+      "Fire": {
+        "All": [
+          "118"
+        ]
+      },
+      "Police": {
+        "All": [
+          "112",
+          "117"
+        ]
+      }
+    }
+  },
+  "LT": {
+    "country_name": "Lithuania",
+    "country_code": "370",
+    "emergency_numbers": {}
+  },
+  "LU": {
+    "country_name": "Luxembourg",
+    "country_code": "352",
+    "emergency_numbers": {
+      "Police": {
+        "All": [
+          "113"
+        ]
+      }
+    }
+  },
+  "MO": {
+    "country_name": "Macao",
+    "country_code": "853",
+    "emergency_numbers": {
+      "Dispatch": {
+        "All": [
+          "999"
+        ]
+      }
+    }
+  },
+  "MK": {
+    "country_name": "Macedonia",
+    "country_code": "389",
+    "emergency_numbers": {
+      "Ambulance": {
+        "All": [
+          "194"
+        ]
+      },
+      "Fire": {
+        "All": [
+          "193"
+        ]
+      },
+      "Police": {
+        "All": [
+          "192"
+        ]
+      }
+    }
+  },
+  "MG": {
+    "country_name": "Madagascar",
+    "country_code": "261",
+    "emergency_numbers": {}
+  },
+  "MW": {
+    "country_name": "Malawi",
+    "country_code": "265",
+    "emergency_numbers": {
+      "Ambulance": {
+        "All": [
+          "998"
+        ]
+      },
+      "Fire": {
+        "All": [
+          "999"
+        ]
+      },
+      "Police": {
+        "All": [
+          "997"
+        ]
+      }
+    }
+  },
+  "MY": {
+    "country_name": "Malaysia",
+    "country_code": "60",
+    "emergency_numbers": {
+      "Ambulance": {
+        "All": [
+          "999"
+        ],
+        "GSM": [
+          "112"
+        ]
+      },
+      "Fire": {
+        "All": [
+          "994"
+        ]
+      },
+      "Police": {
+        "All": [
+          "999"
+        ],
+        "GSM": [
+          "112"
+        ]
+      }
+    }
+  },
+  "MV": {
+    "country_name": "Maldives",
+    "country_code": "960",
+    "emergency_numbers": {
+      "Ambulance": {
+        "All": [
+          "102"
+        ]
+      },
+      "Fire": {
+        "All": [
+          "999"
+        ]
+      },
+      "Police": {
+        "All": [
+          "119"
+        ]
+      }
+    }
+  },
+  "ML": {
+    "country_name": "Mali",
+    "country_code": "223",
+    "emergency_numbers": {
+      "Ambulance": {
+        "All": [
+          "15"
+        ]
+      },
+      "Fire": {
+        "All": [
+          "17"
+        ]
+      },
+      "Police": {
+        "All": [
+          "18"
+        ]
+      }
+    }
+  },
+  "MT": {
+    "country_name": "Malta",
+    "country_code": "356",
+    "emergency_numbers": {}
+  },
+  "MH": {
+    "country_name": "Marshall Islands",
+    "country_code": "692",
+    "emergency_numbers": {
+      "Ambulance": {
+        "All": [
+          "625 4111"
+        ]
+      },
+      "Police": {
+        "All": [
+          "625 8666"
+        ]
+      }
+    }
+  },
+  "MQ": {
+    "country_name": "Martinique",
+    "country_code": "596",
+    "emergency_numbers": {
+      "Ambulance": {
+        "All": [
+          "15"
+        ]
+      },
+      "Fire": {
+        "All": [
+          "18"
+        ]
+      },
+      "Police": {
+        "All": [
+          "17"
+        ]
+      }
+    }
+  },
+  "MR": {
+    "country_name": "Mauritania",
+    "country_code": "222",
+    "emergency_numbers": {
+      "Fire": {
+        "All": [
+          "118"
+        ]
+      },
+      "Police": {
+        "All": [
+          "117"
+        ]
+      }
+    }
+  },
+  "MU": {
+    "country_name": "Mauritius",
+    "country_code": "230",
+    "emergency_numbers": {
+      "Ambulance": {
+        "All": [
+          "114"
+        ]
+      },
+      "Fire": {
+        "All": [
+          "115"
+        ]
+      },
+      "Dispatch": {
+        "All": [
+          "999"
+        ]
+      }
+    }
+  },
+  "YT": {
+    "country_name": "Mayotte",
+    "country_code": "262",
+    "emergency_numbers": {}
+  },
+  "MX": {
+    "country_name": "Mexico",
+    "country_code": "52",
+    "emergency_numbers": {
+      "Ambulance": {
+        "All": [
+          "065"
+        ]
+      },
+      "Fire": {
+        "All": [
+          "068"
+        ]
+      },
+      "Police": {
+        "All": [
+          "060"
+        ]
+      }
+    }
+  },
+  "FM": {
+    "country_name": "Micronesia",
+    "country_code": "691",
+    "emergency_numbers": {}
+  },
+  "MD": {
+    "country_name": "Moldova",
+    "country_code": "373",
+    "emergency_numbers": {
+      "Ambulance": {
+        "All": [
+          "903"
+        ]
+      },
+      "Fire": {
+        "All": [
+          "901"
+        ]
+      },
+      "Police": {
+        "All": [
+          "902"
+        ],
+        "GSM": [
+          "112"
+        ]
+      }
+    }
+  },
+  "MC": {
+    "country_name": "Monaco",
+    "country_code": "377",
+    "emergency_numbers": {
+      "Ambulance": {
+        "All": [
+          "15"
+        ]
+      },
+      "Fire": {
+        "All": [
+          "18"
+        ]
+      },
+      "Police": {
+        "All": [
+          "17"
+        ]
+      }
+    }
+  },
+  "MN": {
+    "country_name": "Mongolia",
+    "country_code": "976",
+    "emergency_numbers": {
+      "Ambulance": {
+        "All": [
+          "103"
+        ]
+      },
+      "Fire": {
+        "All": [
+          "101"
+        ]
+      },
+      "Police": {
+        "All": [
+          "102"
+        ]
+      }
+    }
+  },
+  "ME": {
+    "country_name": "Montenegro",
+    "country_code": "382",
+    "emergency_numbers": {
+      "Ambulance": {
+        "All": [
+          "124"
+        ]
+      },
+      "Fire": {
+        "All": [
+          "123"
+        ]
+      },
+      "Police": {
+        "All": [
+          "122"
+        ]
+      }
+    }
+  },
+  "MS": {
+    "country_name": "Montserrat",
+    "country_code": "+1-664",
+    "emergency_numbers": {
+      "Ambulance": {
+        "All": [
+          "911"
+        ]
+      },
+      "Police": {
+        "All": [
+          "999"
+        ]
+      }
+    }
+  },
+  "MA": {
+    "country_name": "Morocco",
+    "country_code": "212",
+    "emergency_numbers": {
+      "Ambulance": {
+        "All": [
+          "15"
+        ]
+      },
+      "Fire": {
+        "All": [
+          "15"
+        ]
+      },
+      "Police": {
+        "All": [
+          "19"
+        ]
+      }
+    }
+  },
+  "MZ": {
+    "country_name": "Mozambique",
+    "country_code": "258",
+    "emergency_numbers": {
+      "Ambulance": {
+        "All": [
+          "117"
+        ]
+      },
+      "Fire": {
+        "All": [
+          "198"
+        ]
+      },
+      "Police": {
+        "All": [
+          "119"
+        ]
+      }
+    }
+  },
+  "MM": {
+    "country_name": "Myanmar",
+    "country_code": "95",
+    "emergency_numbers": {
+      "Dispatch": {
+        "All": [
+          "999"
+        ]
+      }
+    }
+  },
+  "NA": {
+    "country_name": "Namibia",
+    "country_code": "264",
+    "emergency_numbers": {
+      "Ambulance": {
+        "All": [
+          "2032276"
+        ]
+      },
+      "Fire": {
+        "All": [
+          "2032270"
+        ]
+      },
+      "Police": {
+        "All": [
+          "10 111"
+        ]
+      }
+    }
+  },
+  "NR": {
+    "country_name": "Nauru",
+    "country_code": "674",
+    "emergency_numbers": {}
+  },
+  "NP": {
+    "country_name": "Nepal",
+    "country_code": "977",
+    "emergency_numbers": {
+      "Ambulance": {
+        "All": [
+          "102"
+        ]
+      },
+      "Fire": {
+        "All": [
+          "101"
+        ]
+      },
+      "Police": {
+        "All": [
+          "110",
+          "112"
+        ]
+      }
+    }
+  },
+  "NL": {
+    "country_name": "Netherlands",
+    "country_code": "31",
+    "emergency_numbers": {}
+  },
+  "NC": {
+    "country_name": "New Caledonia",
+    "country_code": "687",
+    "emergency_numbers": {}
+  },
+  "NZ": {
+    "country_name": "New Zealand",
+    "country_code": "64",
+    "emergency_numbers": {
+      "Dispatch": {
+        "All": [
+          "111"
+        ]
+      }
+    }
+  },
+  "NI": {
+    "country_name": "Nicaragua",
+    "country_code": "505",
+    "emergency_numbers": {
+      "Ambulance": {
+        "All": [
+          "128"
+        ]
+      },
+      "Fire": {
+        "All": [
+          "115",
+          "911"
+        ]
+      },
+      "Police": {
+        "All": [
+          "118"
+        ]
+      }
+    }
+  },
+  "NE": {
+    "country_name": "Niger",
+    "country_code": "227",
+    "emergency_numbers": {
+      "Ambulance": {
+        "All": [
+          "15"
+        ]
+      },
+      "Fire": {
+        "All": [
+          "18"
+        ]
+      },
+      "Police": {
+        "All": [
+          "17"
+        ]
+      }
+    }
+  },
+  "NG": {
+    "country_name": "Nigeria",
+    "country_code": "234",
+    "emergency_numbers": {
+      "Ambulance": {
+        "All": [
+          "112"
+        ]
+      },
+      "Fire": {
+        "All": [
+          "112"
+        ]
+      },
+      "Police": {
+        "All": [
+          "112"
+        ]
+      }
+    }
+  },
+  "NU": {
+    "country_name": "Niue",
+    "country_code": "683",
+    "emergency_numbers": {}
+  },
+  "NF": {
+    "country_name": "Norfolk Island",
+    "country_code": "672",
+    "emergency_numbers": {}
+  },
+  "MP": {
+    "country_name": "Northern Mariana Islands",
+    "country_code": "+1-670",
+    "emergency_numbers": {}
+  },
+  "NO": {
+    "country_name": "Norway",
+    "country_code": "47",
+    "emergency_numbers": {
+      "Ambulance": {
+        "All": [
+          "113"
+        ]
+      },
+      "Fire": {
+        "All": [
+          "110"
+        ]
+      },
+      "Police": {
+        "All": [
+          "112"
+        ]
+      }
+    }
+  },
+  "OM": {
+    "country_name": "Oman",
+    "country_code": "968",
+    "emergency_numbers": {
+      "Dispatch": {
+        "All": [
+          "999"
+        ]
+      }
+    }
+  },
+  "PK": {
+    "country_name": "Pakistan",
+    "country_code": "92",
+    "emergency_numbers": {
+      "Dispatch": {
+        "All": [
+          "15"
+        ]
+      }
+    }
+  },
+  "PW": {
+    "country_name": "Palau",
+    "country_code": "680",
+    "emergency_numbers": {
+      "Dispatch": {
+        "All": [
+          "911"
+        ]
+      }
+    }
+  },
+  "PS": {
+    "country_name": "Palestinian Territory",
+    "country_code": "970",
+    "emergency_numbers": {
+      "Ambulance": {
+        "All": [
+          "101"
+        ]
+      },
+      "Fire": {
+        "All": [
+          "101"
+        ]
+      },
+      "Police": {
+        "All": [
+          "100"
+        ]
+      }
+    }
+  },
+  "PA": {
+    "country_name": "Panama",
+    "country_code": "507",
+    "emergency_numbers": {
+      "Fire": {
+        "All": [
+          "103"
+        ]
+      },
+      "Police": {
+        "All": [
+          "104"
+        ]
+      },
+      "Dispatch": {
+        "All": [
+          "911"
+        ]
+      }
+    }
+  },
+  "PG": {
+    "country_name": "Papua New Guinea",
+    "country_code": "675",
+    "emergency_numbers": {
+      "Fire": {
+        "All": [
+          "110"
+        ]
+      },
+      "Police": {
+        "All": [
+          "000"
+        ]
+      }
+    }
+  },
+  "PY": {
+    "country_name": "Paraguay",
+    "country_code": "595",
+    "emergency_numbers": {
+      "Dispatch": {
+        "All": [
+          "00"
+        ]
+      }
+    }
+  },
+  "PE": {
+    "country_name": "Peru",
+    "country_code": "51",
+    "emergency_numbers": {
+      "Dispatch": {
+        "All": [
+          "011",
+          " 5114"
+        ]
+      }
+    }
+  },
+  "PH": {
+    "country_name": "Philippines",
+    "country_code": "63",
+    "emergency_numbers": {
+      "Dispatch": {
+        "All": [
+          "116",
+          "117"
+        ]
+      }
+    }
+  },
+  "PN": {
+    "country_name": "Pitcairn",
+    "country_code": "870",
+    "emergency_numbers": {}
+  },
+  "PL": {
+    "country_name": "Poland",
+    "country_code": "48",
+    "emergency_numbers": {
+      "Ambulance": {
+        "All": [
+          "999"
+        ]
+      },
+      "Fire": {
+        "All": [
+          "998"
+        ]
+      },
+      "Police": {
+        "All": [
+          "997"
+        ]
+      }
+    }
+  },
+  "PT": {
+    "country_name": "Portugal",
+    "country_code": "351",
+    "emergency_numbers": {}
+  },
+  "PR": {
+    "country_name": "Puerto Rico",
+    "country_code": "+1-787 and 1-939",
+    "emergency_numbers": {
+      "Dispatch": {
+        "All": [
+          "911"
+        ]
+      }
+    }
+  },
+  "QA": {
+    "country_name": "Qatar",
+    "country_code": "974",
+    "emergency_numbers": {
+      "Dispatch": {
+        "All": [
+          "999"
+        ]
+      }
+    }
+  },
+  "RE": {
+    "country_name": "Reunion",
+    "country_code": "262",
+    "emergency_numbers": {
+      "Ambulance": {
+        "All": [
+          "112",
+          "15"
+        ]
+      },
+      "Fire": {
+        "All": [
+          "18"
+        ]
+      },
+      "Police": {
+        "All": [
+          "17"
+        ]
+      }
+    }
+  },
+  "RO": {
+    "country_name": "Romania",
+    "country_code": "40",
+    "emergency_numbers": {
+      "Ambulance": {
+        "All": [
+          "112"
+        ]
+      },
+      "Fire": {
+        "All": [
+          "112"
+        ]
+      },
+      "Police": {
+        "All": [
+          "112"
+        ]
+      }
+    }
+  },
+  "RU": {
+    "country_name": "Russia",
+    "country_code": "7",
+    "emergency_numbers": {
+      "Ambulance": {
+        "All": [
+          "103"
+        ]
+      },
+      "Fire": {
+        "All": [
+          "101"
+        ]
+      },
+      "Police": {
+        "All": [
+          "102"
+        ]
+      }
+    }
+  },
+  "RW": {
+    "country_name": "Rwanda",
+    "country_code": "250",
+    "emergency_numbers": {
+      "Ambulance": {
+        "All": [
+          "912"
+        ]
+      },
+      "Fire": {
+        "All": [
+          "112"
+        ]
+      },
+      "Police": {
+        "All": [
+          "112"
+        ]
+      }
+    }
+  },
+  "BL": {
+    "country_name": "Saint Barthelemy",
+    "country_code": "590",
+    "emergency_numbers": {}
+  },
+  "SH": {
+    "country_name": "Saint Helena",
+    "country_code": "290",
+    "emergency_numbers": {
+      "Dispatch": {
+        "All": [
+          "911"
+        ]
+      }
+    }
+  },
+  "KN": {
+    "country_name": "Saint Kitts and Nevis",
+    "country_code": "+1-869",
+    "emergency_numbers": {
+      "Dispatch": {
+        "All": [
+          "911"
+        ]
+      }
+    }
+  },
+  "LC": {
+    "country_name": "Saint Lucia",
+    "country_code": "+1-758",
+    "emergency_numbers": {
+      "Dispatch": {
+        "All": [
+          "999",
+          "911"
+        ]
+      }
+    }
+  },
+  "MF": {
+    "country_name": "Saint Martin",
+    "country_code": "590",
+    "emergency_numbers": {}
+  },
+  "PM": {
+    "country_name": "Saint Pierre and Miquelon",
+    "country_code": "508",
+    "emergency_numbers": {}
+  },
+  "VC": {
+    "country_name": "Saint Vincent and the Grenadines",
+    "country_code": "+1-784",
+    "emergency_numbers": {
+      "Dispatch": {
+        "All": [
+          "999",
+          "911"
+        ]
+      }
+    }
+  },
+  "WS": {
+    "country_name": "Samoa",
+    "country_code": "685",
+    "emergency_numbers": {
+      "Dispatch": {
+        "All": [
+          "999"
+        ]
+      }
+    }
+  },
+  "SM": {
+    "country_name": "San Marino",
+    "country_code": "378",
+    "emergency_numbers": {
+      "Ambulance": {
+        "All": [
+          "118"
+        ]
+      },
+      "Fire": {
+        "All": [
+          "115"
+        ]
+      },
+      "Police": {
+        "All": [
+          "112",
+          "113"
+        ]
+      }
+    }
+  },
+  "ST": {
+    "country_name": "Sao Tome and Principe",
+    "country_code": "239",
+    "emergency_numbers": {}
+  },
+  "SA": {
+    "country_name": "Saudi Arabia",
+    "country_code": "966",
+    "emergency_numbers": {
+      "Ambulance": {
+        "All": [
+          "997"
+        ]
+      },
+      "Fire": {
+        "All": [
+          "998"
+        ]
+      },
+      "Police": {
+        "All": [
+          "999"
+        ]
+      }
+    }
+  },
+  "SN": {
+    "country_name": "Senegal",
+    "country_code": "221",
+    "emergency_numbers": {
+      "Ambulance": {
+        "All": [
+          "15"
+        ]
+      },
+      "Fire": {
+        "All": [
+          "18"
+        ]
+      },
+      "Police": {
+        "All": [
+          "17"
+        ]
+      }
+    }
+  },
+  "RS": {
+    "country_name": "Serbia",
+    "country_code": "381",
+    "emergency_numbers": {
+      "Ambulance": {
+        "All": [
+          "194"
+        ]
+      },
+      "Fire": {
+        "All": [
+          "193"
+        ]
+      },
+      "Police": {
+        "All": [
+          "192"
+        ]
+      }
+    }
+  },
+  "SC": {
+    "country_name": "Seychelles",
+    "country_code": "248",
+    "emergency_numbers": {
+      "Dispatch": {
+        "All": [
+          "999"
+        ]
+      }
+    }
+  },
+  "SL": {
+    "country_name": "Sierra Leone",
+    "country_code": "232",
+    "emergency_numbers": {
+      "Ambulance": {
+        "All": [
+          "999"
+        ]
+      },
+      "Fire": {
+        "All": [
+          "019"
+        ]
+      },
+      "Police": {
+        "All": [
+          "999"
+        ]
+      }
+    }
+  },
+  "SG": {
+    "country_name": "Singapore",
+    "country_code": "65",
+    "emergency_numbers": {
+      "Ambulance": {
+        "All": [
+          "995"
+        ]
+      },
+      "Fire": {
+        "All": [
+          "995"
+        ]
+      },
+      "Police": {
+        "All": [
+          "999"
+        ]
+      }
+    }
+  },
+  "SX": {
+    "country_name": "Sint Maarten",
+    "country_code": "599",
+    "emergency_numbers": {}
+  },
+  "SK": {
+    "country_name": "Slovakia",
+    "country_code": "421",
+    "emergency_numbers": {
+      "Ambulance": {
+        "All": [
+          "155"
+        ]
+      },
+      "Fire": {
+        "All": [
+          "150"
+        ]
+      },
+      "Police": {
+        "All": [
+          "158"
+        ]
+      }
+    }
+  },
+  "SI": {
+    "country_name": "Slovenia",
+    "country_code": "386",
+    "emergency_numbers": {
+      "Police": {
+        "All": [
+          "113"
+        ]
+      }
+    }
+  },
+  "SB": {
+    "country_name": "Solomon Islands",
+    "country_code": "677",
+    "emergency_numbers": {
+      "Dispatch": {
+        "All": [
+          "911"
+        ]
+      }
+    }
+  },
+  "SO": {
+    "country_name": "Somalia",
+    "country_code": "252",
+    "emergency_numbers": {}
+  },
+  "ZA": {
+    "country_name": "South Africa",
+    "country_code": "27",
+    "emergency_numbers": {
+      "Ambulance": {
+        "All": [
+          "10177"
+        ]
+      },
+      "Fire": {
+        "All": [
+          "10177"
+        ]
+      },
+      "Police": {
+        "All": [
+          "10111"
+        ]
+      },
+      "Dispatch": {
+        "GSM": [
+          "112"
+        ]
+      }
+    }
+  },
+  "GS": {
+    "country_name": "South Georgia and the South Sandwich Islands",
+    "country_code": "",
+    "emergency_numbers": {}
+  },
+  "SS": {
+    "country_name": "South Sudan",
+    "country_code": "211",
+    "emergency_numbers": {}
+  },
+  "ES": {
+    "country_name": "Spain",
+    "country_code": "34",
+    "emergency_numbers": {
+      "Ambulance": {
+        "All": [
+          "061"
+        ]
+      },
+      "Fire": {
+        "All": [
+          "080"
+        ]
+      },
+      "Police": {
+        "All": [
+          "091"
+        ]
+      }
+    }
+  },
+  "LK": {
+    "country_name": "Sri Lanka",
+    "country_code": "94",
+    "emergency_numbers": {
+      "Ambulance": {
+        "All": [
+          "110"
+        ]
+      },
+      "Fire": {
+        "All": [
+          "110"
+        ]
+      },
+      "Police": {
+        "All": [
+          "112",
+          "119"
+        ]
+      }
+    }
+  },
+  "SD": {
+    "country_name": "Sudan",
+    "country_code": "249",
+    "emergency_numbers": {}
+  },
+  "SR": {
+    "country_name": "Suriname",
+    "country_code": "597",
+    "emergency_numbers": {}
+  },
+  "SJ": {
+    "country_name": "Svalbard and Jan Mayen",
+    "country_code": "47",
+    "emergency_numbers": {}
+  },
+  "SZ": {
+    "country_name": "Swaziland",
+    "country_code": "268",
+    "emergency_numbers": {}
+  },
+  "SE": {
+    "country_name": "Sweden",
+    "country_code": "46",
+    "emergency_numbers": {}
+  },
+  "CH": {
+    "country_name": "Switzerland",
+    "country_code": "41",
+    "emergency_numbers": {
+      "Ambulance": {
+        "All": [
+          "144"
+        ]
+      },
+      "Fire": {
+        "All": [
+          "118"
+        ]
+      },
+      "Police": {
+        "All": [
+          "117"
+        ]
+      }
+    }
+  },
+  "SY": {
+    "country_name": "Syria",
+    "country_code": "963",
+    "emergency_numbers": {
+      "Ambulance": {
+        "All": [
+          "110"
+        ]
+      },
+      "Fire": {
+        "All": [
+          "113"
+        ]
+      },
+      "Police": {
+        "All": [
+          "112"
+        ]
+      }
+    }
+  },
+  "TW": {
+    "country_name": "Taiwan",
+    "country_code": "886",
+    "emergency_numbers": {
+      "Ambulance": {
+        "All": [
+          "119"
+        ]
+      },
+      "Fire": {
+        "All": [
+          "119"
+        ]
+      },
+      "Police": {
+        "All": [
+          "110"
+        ]
+      }
+    }
+  },
+  "TJ": {
+    "country_name": "Tajikistan",
+    "country_code": "992",
+    "emergency_numbers": {
+      "Ambulance": {
+        "All": [
+          "03"
+        ]
+      }
+    }
+  },
+  "TZ": {
+    "country_name": "Tanzania",
+    "country_code": "255",
+    "emergency_numbers": {
+      "Dispatch": {
+        "All": [
+          "112",
+          "999"
+        ]
+      }
+    }
+  },
+  "TH": {
+    "country_name": "Thailand",
+    "country_code": "66",
+    "emergency_numbers": {
+      "Ambulance": {
+        "All": [
+          "191"
+        ]
+      },
+      "Fire": {
+        "All": [
+          "199"
+        ]
+      },
+      "Police": {
+        "All": [
+          "191"
+        ]
+      }
+    }
+  },
+  "TL": {
+    "country_name": "East Timor",
+    "country_code": "670",
+    "emergency_numbers": {}
+  },
+  "TG": {
+    "country_name": "Togo",
+    "country_code": "228",
+    "emergency_numbers": {
+      "Police": {
+        "All": [
+          "101"
+        ]
+      }
+    }
+  },
+  "TK": {
+    "country_name": "Tokelau",
+    "country_code": "690",
+    "emergency_numbers": {}
+  },
+  "TO": {
+    "country_name": "Tonga",
+    "country_code": "676",
+    "emergency_numbers": {
+      "Dispatch": {
+        "All": [
+          "911"
+        ]
+      }
+    }
+  },
+  "TT": {
+    "country_name": "Trinidad and Tobago",
+    "country_code": "+1-868",
+    "emergency_numbers": {
+      "Ambulance": {
+        "All": [
+          "990"
+        ]
+      },
+      "Fire": {
+        "All": [
+          "990"
+        ]
+      },
+      "Police": {
+        "All": [
+          "999"
+        ]
+      }
+    }
+  },
+  "TN": {
+    "country_name": "Tunisia",
+    "country_code": "216",
+    "emergency_numbers": {
+      "Ambulance": {
+        "All": [
+          "190"
+        ]
+      },
+      "Fire": {
+        "All": [
+          "198"
+        ]
+      },
+      "Police": {
+        "All": [
+          "197"
+        ]
+      }
+    }
+  },
+  "TR": {
+    "country_name": "Turkey",
+    "country_code": "90",
+    "emergency_numbers": {
+      "Ambulance": {
+        "All": [
+          "112"
+        ]
+      },
+      "Fire": {
+        "All": [
+          "110"
+        ]
+      },
+      "Police": {
+        "All": [
+          "155"
+        ]
+      }
+    }
+  },
+  "TM": {
+    "country_name": "Turkmenistan",
+    "country_code": "993",
+    "emergency_numbers": {
+      "Ambulance": {
+        "All": [
+          "03"
+        ]
+      },
+      "Fire": {
+        "All": [
+          "01"
+        ]
+      },
+      "Police": {
+        "All": [
+          "02"
+        ]
+      }
+    }
+  },
+  "TC": {
+    "country_name": "Turks and Caicos Islands",
+    "country_code": "+1-649",
+    "emergency_numbers": {
+      "Dispatch": {
+        "All": [
+          "999",
+          " 911"
+        ]
+      }
+    }
+  },
+  "TV": {
+    "country_name": "Tuvalu",
+    "country_code": "688",
+    "emergency_numbers": {
+      "Dispatch": {
+        "All": [
+          "911"
+        ]
+      }
+    }
+  },
+  "UG": {
+    "country_name": "Uganda",
+    "country_code": "256",
+    "emergency_numbers": {
+      "Dispatch": {
+        "GSM": [
+          "112"
+        ],
+        "Fixed": [
+          "999"
+        ]
+      }
+    }
+  },
+  "UA": {
+    "country_name": "Ukraine",
+    "country_code": "380",
+    "emergency_numbers": {
+      "Ambulance": {
+        "All": [
+          "103"
+        ]
+      },
+      "Fire": {
+        "All": [
+          "101"
+        ]
+      },
+      "Police": {
+        "All": [
+          "102"
+        ]
+      }
+    }
+  },
+  "AE": {
+    "country_name": "United Arab Emirates",
+    "country_code": "971",
+    "emergency_numbers": {
+      "Ambulance": {
+        "All": [
+          "998"
+        ]
+      },
+      "Fire": {
+        "All": [
+          "997"
+        ]
+      },
+      "Police": {
+        "All": [
+          "999"
+        ]
+      }
+    }
+  },
+  "GB": {
+    "country_name": "United Kingdom",
+    "country_code": "44",
+    "emergency_numbers": {
+      "Dispatch": {
+        "All": [
+          "999"
+        ]
+      }
+    }
+  },
+  "UM": {
+    "country_name": "United States Minor Outlying Islands",
+    "country_code": "1",
+    "emergency_numbers": {}
+  },
+  "US": {
+    "country_name": "United States",
+    "country_code": "1",
+    "emergency_numbers": {
+      "Dispatch": {
+        "All": [
+          "911"
+        ]
+      }
+    }
+  },
+  "UY": {
+    "country_name": "Uruguay",
+    "country_code": "598",
+    "emergency_numbers": {
+      "Dispatch": {
+        "All": [
+          "999",
+          "911"
+        ]
+      }
+    }
+  },
+  "UZ": {
+    "country_name": "Uzbekistan",
+    "country_code": "998",
+    "emergency_numbers": {
+      "Dispatch": {
+        "All": [
+          "03"
+        ]
+      }
+    }
+  },
+  "VU": {
+    "country_name": "Vanuatu",
+    "country_code": "678",
+    "emergency_numbers": {}
+  },
+  "VE": {
+    "country_name": "Venezuela",
+    "country_code": "58",
+    "emergency_numbers": {
+      "Dispatch": {
+        "All": [
+          "171"
+        ]
+      }
+    }
+  },
+  "VN": {
+    "country_name": "Vietnam",
+    "country_code": "84",
+    "emergency_numbers": {
+      "Ambulance": {
+        "All": [
+          "05"
+        ]
+      },
+      "Fire": {
+        "All": [
+          "08"
+        ]
+      },
+      "Police": {
+        "All": [
+          "03"
+        ]
+      }
+    }
+  },
+  "VG": {
+    "country_name": "British Virgin Islands",
+    "country_code": "+1-284",
+    "emergency_numbers": {
+      "Dispatch": {
+        "All": [
+          "999"
+        ]
+      }
+    }
+  },
+  "VI": {
+    "country_name": "U.S. Virgin Islands",
+    "country_code": "+1-340",
+    "emergency_numbers": {
+      "Dispatch": {
+        "All": [
+          "911"
+        ]
+      }
+    }
+  },
+  "WF": {
+    "country_name": "Wallis and Futuna",
+    "country_code": "681",
+    "emergency_numbers": {}
+  },
+  "EH": {
+    "country_name": "Western Sahara",
+    "country_code": "212",
+    "emergency_numbers": {
+      "Ambulance": {
+        "All": [
+          "150"
+        ]
+      }
+    }
+  },
+  "YE": {
+    "country_name": "Yemen",
+    "country_code": "967",
+    "emergency_numbers": {
+      "Ambulance": {
+        "All": [
+          "191"
+        ]
+      },
+      "Fire": {
+        "All": [
+          "191"
+        ]
+      },
+      "Police": {
+        "All": [
+          "194"
+        ]
+      }
+    }
+  },
+  "ZM": {
+    "country_name": "Zambia",
+    "country_code": "260",
+    "emergency_numbers": {
+      "Dispatch": {
+        "All": [
+          "999"
+        ]
+      }
+    }
+  },
+  "ZW": {
+    "country_name": "Zimbabwe",
+    "country_code": "263",
+    "emergency_numbers": {
+      "Dispatch": {
+        "All": [
+          "999"
+        ]
+      }
+    }
+  }
+}
