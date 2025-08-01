@@ -21,14 +21,34 @@ This pipeline addresses the critical need for **offline medical AI assistance** 
 The project follows a **6-phase pipeline** designed for maximum efficiency and clinical accuracy:
 
 ```
-📊 Data Collection → 🔍 Baseline Evaluation → 🛠️ Data Preparation → 🎓 Model Training → 📈 Performance Evaluation → 📱 Mobile Deployment
+🔍 Baseline Evaluation → 📊 Data Collection → 🛠️ Data Preparation → 🎓 Model Training → 📈 Performance Evaluation → 📱 Mobile Deployment
 ```
 
 Each phase builds upon the previous, creating a robust medical AI system optimized for emergency scenarios.
 
 ## 📋 Pipeline Phases
 
-### Phase 1: Data Collection (`/data`)
+### Phase 1: Baseline Evaluation (`/evaluation`)
+**Purpose**: Establish performance baseline for the base Gemma-3n model
+
+**What it does**:
+- Tests base Gemma-3n model on medical benchmarks
+- Uses AI judge (Gemini 2.5 Flash) for consistent evaluation
+- Establishes 36.15% baseline accuracy on medical tasks
+
+**Why this approach**:
+- **Performance Benchmarking**: Quantifies improvement from fine-tuning
+- **AI Judge System**: Eliminates human bias in evaluation
+- **Standardized Metrics**: Reproducible evaluation methodology
+
+**Key Components**:
+- `evaluation.py`: Main evaluation script with configurable parameters
+- Judge-based scoring using OpenRouter API
+- First Aid Instructions dataset for medical relevance
+
+**📖 [Detailed Evaluation Documentation →](./evaluation/README.md)**
+
+### Phase 2: Data Collection (`/data`)
 **Purpose**: Automated download of medical datasets and official emergency documents
 
 **What it does**:
@@ -47,8 +67,6 @@ Each phase builds upon the previous, creating a robust medical AI system optimiz
 - Organized folder structure for easy processing
 
 **📖 [Detailed Data Pipeline Documentation →](./data/README.md)**
-
-### Phase 2: Baseline Evaluation (`/evaluation`)
 **Purpose**: Establish performance baseline for the base Gemma-3n model
 
 **What it does**:
@@ -182,13 +200,13 @@ Each phase builds upon the previous, creating a robust medical AI system optimiz
 ### Complete Pipeline Execution
 
 ```bash
-# 1. Data Collection
-cd data
-python download_all.py
-
-# 2. Baseline Evaluation
-cd ../evaluation
+# 1. Baseline Evaluation
+cd evaluation
 python evaluation.py --gen-model gemma3n --limit 50
+
+# 2. Data Collection
+cd ../data
+python download_all.py
 
 # 3. Data Preparation
 cd ../data-prep
