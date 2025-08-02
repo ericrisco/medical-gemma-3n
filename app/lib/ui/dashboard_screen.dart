@@ -6,6 +6,7 @@ import 'package:flutter_dotenv/flutter_dotenv.dart';
 import 'chat_screen.dart';
 import 'country_selector_screen.dart';
 import 'first_aid_guide_screen.dart';
+import 'image_diagnosis_screen.dart';
 import '../services/emergency_service.dart';
 import '../data/gemma_downloader_datasource.dart';
 
@@ -513,6 +514,20 @@ class _DashboardScreenState extends State<DashboardScreen> {
     );
   }
 
+  Future<void> _openImageDiagnosis(BuildContext context) async {
+    // Check if model is available
+    final isModelReady = await _checkModelAvailability();
+    
+    if (!isModelReady) {
+      _showModelNotReadyDialog(context, 'Image Diagnosis');
+      return;
+    }
+
+    Navigator.of(context).push(
+      MaterialPageRoute(builder: (context) => const ImageDiagnosisScreen()),
+    );
+  }
+
   void _showModelNotReadyDialog(BuildContext context, String feature) {
     showDialog(
       context: context,
@@ -648,7 +663,7 @@ class _DashboardScreenState extends State<DashboardScreen> {
                   title: 'Image Diagnosis',
                   description: 'Medical assessment from photos',
                   color: Colors.purple,
-                  onTap: () => _showComingSoon(context, 'Image Diagnosis'),
+                  onTap: () => _openImageDiagnosis(context),
                 ),
               ),
             ],
@@ -697,7 +712,7 @@ class _DashboardScreenState extends State<DashboardScreen> {
                   title: 'Image Diagnosis',
                   description: 'Medical assessment from photos',
                   color: Colors.purple,
-                  onTap: () => _showComingSoon(context, 'Image Diagnosis'),
+                  onTap: () => _openImageDiagnosis(context),
                 ),
               ),
             ],

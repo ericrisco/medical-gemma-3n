@@ -52,9 +52,7 @@ class _ChatScreenState extends State<ChatScreen> with TickerProviderStateMixin {
     try {
       // Create a chat instance (not session) for conversation history
       _chat = await _gemmaService.createChat(
-        temperature: 0.7,
-        randomSeed: 1,
-        topK: 40,
+        supportImage: false,
       );
 
       if (mounted) {

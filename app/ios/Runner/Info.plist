@@ -52,5 +52,13 @@
 		<string>tel</string>
 		<string>telprompt</string>
 	</array>
+	<key>NSCameraUsageDescription</key>
+	<string>This app needs access to camera to take medical photos for diagnosis.</string>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>This app needs access to photo library to select medical images for diagnosis.</string>
+	<key>NSMicrophoneUsageDescription</key>
+	<string>This app needs access to microphone for video recording during medical diagnosis.</string>
+	<key>NSLocalNetworkUsageDescription</key>
+	<string>This app requires local network access for model inference services.</string>
 </dict>
 </plist>

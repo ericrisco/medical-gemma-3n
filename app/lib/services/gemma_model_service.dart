@@ -56,7 +56,8 @@ class GemmaModelService {
       
       _inferenceModel = await gemma.createModel(
         modelType: ModelType.gemmaIt,
-        maxTokens: 4096,
+        supportImage: true,
+        maxTokens: 2048,
       );
 
       _isInitialized = true;
@@ -77,11 +78,13 @@ class GemmaModelService {
     double temperature = 0.7,
     int randomSeed = 1,
     int topK = 40,
+    bool enableVisionModality = false,
   }) async {
     final model = await getModel();
     print('📝 GEMMA SERVICE: Creating new session...');
     
     final session = await model.createSession(
+      enableVisionModality: enableVisionModality, // Enable image processing if requested
       temperature: temperature,
       randomSeed: randomSeed,
       topK: topK,
@@ -93,17 +96,13 @@ class GemmaModelService {
 
   /// Create a new chat for conversation with history
   Future<dynamic> createChat({
-    double temperature = 0.7,
-    int randomSeed = 1,
-    int topK = 40,
+    bool supportImage = false,
   }) async {
     final model = await getModel();
     print('💬 GEMMA SERVICE: Creating new chat...');
     
     final chat = await model.createChat(
-      temperature: temperature,
-      randomSeed: randomSeed,
-      topK: topK,
+      supportImage: supportImage
     );
     
     print('✅ GEMMA SERVICE: Chat created successfully');

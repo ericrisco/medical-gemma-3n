@@ -6,6 +6,8 @@ PODS:
     - MediaPipeTasksGenAIC (= 0.10.24)
   - flutter_phone_direct_caller (0.0.1):
     - Flutter
+  - image_picker_ios (0.0.1):
+    - Flutter
   - large_file_handler (0.0.1):
     - Flutter
   - MediaPipeTasksGenAI (0.10.24):
@@ -24,6 +26,7 @@ DEPENDENCIES:
   - Flutter (from `Flutter`)
   - flutter_gemma (from `.symlinks/plugins/flutter_gemma/ios`)
   - flutter_phone_direct_caller (from `.symlinks/plugins/flutter_phone_direct_caller/ios`)
+  - image_picker_ios (from `.symlinks/plugins/image_picker_ios/ios`)
   - large_file_handler (from `.symlinks/plugins/large_file_handler/ios`)
   - path_provider_foundation (from `.symlinks/plugins/path_provider_foundation/darwin`)
   - shared_preferences_foundation (from `.symlinks/plugins/shared_preferences_foundation/darwin`)
@@ -41,6 +44,8 @@ EXTERNAL SOURCES:
     :path: ".symlinks/plugins/flutter_gemma/ios"
   flutter_phone_direct_caller:
     :path: ".symlinks/plugins/flutter_phone_direct_caller/ios"
+  image_picker_ios:
+    :path: ".symlinks/plugins/image_picker_ios/ios"
   large_file_handler:
     :path: ".symlinks/plugins/large_file_handler/ios"
   path_provider_foundation:
@@ -52,15 +57,16 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   Flutter: e0871f40cf51350855a761d2e70bf5af5b9b5de7
-  flutter_gemma: c104e5c505eac327a0877a7cb21a593982703154
-  flutter_phone_direct_caller: 7d5d72794577b96f12b4b6da13a9ef90ba438665
-  large_file_handler: b37481e9b4972562ffcdc8f75700f47cd592bcec
+  flutter_gemma: 130315f51c8c891729aaf7ed3987f2e8e44eca3d
+  flutter_phone_direct_caller: bd2ffd297f371a8a6c7bfbba0196964ffe3c4358
+  image_picker_ios: c560581cceedb403a6ff17f2f816d7fea1421fc1
+  large_file_handler: e3686e246052b0f03955789d3a04604574f80afe
   MediaPipeTasksGenAI: 076ba7032a6e9da16db9c7cf0c3b67c751c18bc1
   MediaPipeTasksGenAIC: ec35d9f431f6a6b651a0bc9f67a4ed149ffa575c
-  path_provider_foundation: 080d55be775b7414fd5a5ef3ac137b97b097e564
-  shared_preferences_foundation: 9e1978ff2562383bd5676f64ec4e9aa8fa06a6f7
-  url_launcher_ios: 694010445543906933d732453a59da0a173ae33d
+  path_provider_foundation: 2b6b4c569c0fb62ec74538f866245ac84301af46
+  shared_preferences_foundation: fcdcbc04712aee1108ac7fda236f363274528f78
+  url_launcher_ios: 5334b05cef931de560670eeae103fd3e431ac3fe
 
 PODFILE CHECKSUM: caff213b0e9416be8d9bdb8ac7f3e4327ad5b87e
 
-COCOAPODS: 1.16.2
+COCOAPODS: 1.10.1
